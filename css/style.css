@@ -45,6 +45,10 @@ li {
 
 nav li{
 	    margin: 0 13px;
+		color: antiquewhite;
+}
+.navbar-toggler-icon {
+	filter: invert(1); /* 把原本的黑白色反轉 */
 }
 .navbar {
     background-color: rgb(33, 35, 35) /* 你想要的顏色 */
