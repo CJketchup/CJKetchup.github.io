@@ -1,7 +1,32 @@
 /* #3A3B3B
 #E8CB49 */
-
-
+body {
+    background-color: rgb(33, 35, 35); /* 換你想要的顏色 */
+}
+@keyframes fadeInUp {
+	0% { opacity: 0; transform: translateY(20px);}
+	100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes slideInLeft {
+	0% { transform: translateX(-100px); opacity: 0; }
+	100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes zoomIn {
+	0% { transform: scale(0.8); opacity: 0; }
+	100% { transform: scale(1); opacity: 1; }
+}
+.new-amsterdam-regular {
+	font-family: "New Amsterdam", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+  
+.stick-regular {
+	font-family: "Stick", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+  
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Noto Sans TC', sans-serif;
 }
@@ -21,6 +46,15 @@ li {
 nav li{
 	    margin: 0 13px;
 }
+.navbar {
+    background-color: rgb(33, 35, 35) /* 你想要的顏色 */
+}
+.nav-link {
+	color: antiquewhite; /*這裡可以換成你想要的字體顏色 */
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
 #intro .jumbotron{
 	background: url('../pictures/mainbg.png');
 	background-size: cover;
@@ -32,11 +66,45 @@ nav li{
 
 #intro .jumbotron .container{
 	position:relative;
-    top: 50%;
+    top: 10%;
     transform: translate(0, -50%);
 }
 #intro .btn{
 	margin-top: 20px;
+}
+#intro h1{
+    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
+	color:antiquewhite;
+	font-size: 6rem;
+	font-weight: 400;
+	animation: fadeInUp 1.2s ease-out forwards;
+}
+#intro h2{
+    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
+	color:antiquewhite;
+	font-size: 8rem;
+	font-weight: 700;
+	animation: slideInLeft 2.4s ease-out forwards;
+	
+}
+#intro h3{
+    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
+	color:antiquewhite;
+	font-size: 8rem;
+	font-weight: 700;
+	animation: slideInLeft 4.5s ease-out forwards;
+	
+}
+
+#intro p{
+    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
+	color:antiquewhite;
+	font-size: 3rem;
+	font-weight: 500;
+	animation: zoomIn 8s ease-out forwards;
+}
+#intro a {
+    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
 }
 .btn{
 	
@@ -66,7 +134,11 @@ nav li{
 }
 #second h3, #latest h3{
 	margin-bottom: 70px;
-	font-size: 32px;
+	color:antiquewhite;
+	font-size: 4rem;
+	font-family: "Stick", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 #second .self img {
 	object-fit: cover;
@@ -80,30 +152,23 @@ nav li{
 }
 #second li {
 	position: relative;
-}
-#second li::before {
-	content: '';
-	position: absolute;
-	left: -23px;
-	top: 4px;
-	width: 10px;
-	height: 17px;
-	background: #E8CB49;
-	border-radius: 0 100px 100px 0;
+	color:antiquewhite;
+	text-align: left;
+    padding-left: 20px; 
 }
 
 p{
-	font-size: 16px;
-	line-height: 26px;
-	color: #707070;
+	font-size: 24px;
+	line-height: 32px;
+	color:antiquewhite;
 }
 p.lead{
-	font-size: 1.09rem;
-	color: black;
+	font-size: 2.0rem;
+	color:antiquewhite;
 	line-height: 31px;
 }
 #latest {
-	background: rgb(249, 245, 245);
+	background: rgb(33, 35, 35);
 	padding: 80px 0px;
 }
 #latest .upper{
@@ -163,23 +228,42 @@ p.lead{
 footer{
 	padding: 80px 0px
 }
-#email p{
+#email p, #email h3{
 	margin-top: 40px;
+	color:antiquewhite;
 }
-#email .btn{
-	margin-top: 10px;
-	font-size: 16px;
-	margin-left: 10px; 
+
+.input-group .form-control, 
+.input-group .btn {
+    height: 50px;
 }
+
+.input-group .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-group .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 footer{
 	border-top: 1px solid rgba(0,0,0,0.09);
 }
 footer img{
 	margin-bottom: 24px;
 }
+#LogoLine p{
+	font-family: "New Amsterdam", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+}
 footer h4{
 	font-size: 20px;
     margin-bottom: 35px;
+	color:antiquewhite;
 
 }
 footer ul{
@@ -187,7 +271,7 @@ footer ul{
     padding: 0;
 }
 footer ul a{
-	color: #707070;
+	color:antiquewhite;
 }
 footer a{
 	color:#E8CB49;
