@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="html, css, 網頁, JS, javascript">
+    <meta name="description" content="Here is my page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Ketchup" content="Chiao">
+
+    <!-- bootstrap js css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--title小圖示-->
+    <link rel="icon" href="img/logo/logo_small.svg">
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a><!--設定LOGO圖片位置--> <img src ="img/CJF-removebg-preview.png" alt="logo" width="145" >
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">首頁</a> 
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="second.html" target = "_blank">最新消息</a> <!--設定連結-->
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          介紹
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">作品之一</a></li>
+                          <li><a class="dropdown-item" href="#">作品之二</a></li>
+                          <!--
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> 
+                          -->
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a a href="#" class="nav-link">聯絡我們</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <section id="intro" style="background: linear-gradient(45deg, rgba(50, 50, 50, 0.395), transparent) 20%, url(img/RBBurnOut.jpg) no-repeat center;background-size: cover;"> <!--背景圖片置換處-->
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="display-4">最好玩最好吃行程</h1>
+                <P class="lead">生活悶悶的?加入我們一起出國囉</P>
+                <a href="#">參加行程去～～</a>
+            </div>
+        </div>
+    </section>
+    <section id="second">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+              <h3 class="text-center">簡介</h3>
+              <div class ="row justify-content-around align-items-center">
+                <div class="col-md-5 self">
+                  <img src="img/RBcar11.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img src="img/CJF.webp" class="d-block mb-4" alt="logo" width="180">
+                  <p class="lead mb-5">CJ公司自2024年成立</p>
+                  <ul>
+                    <li class="mb-3">2024年對於程式設計充滿熱情的創辦人Ketchup創立了CJ公司</li>
+                    <li class="mb-3">從小對於程式設計懷有憧憬</li>
+                    <li class="mb-3">從頭開始歸零學習</li>
+                    <li class="mb-3">學習業界最新的知識</li>
+                    <li class="mb-3">Keep Pushing !</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest">
+      <div class="container">
+        <div class="row text-center">
+            <h3>推薦方案</h3>
+            <div class="col-md-4 text-left">
+              <div class="outer">
+                  <a href="#">
+                      <div class="upper">
+                          <img src="img/france.jpg" alt="">                                                               
+                          <div class="innertext">
+                              <span class="text-light fw-semibold">優惠限時中</span>
+                          </div>
+                      </div>   
+                  </a>
+                <div class="lower">
+                  <h3>迷人的法國：揭開美麗生活的魔力</h3>
+                  <p><i class="fa-solid fa-terminal"></i></i>法國巴黎</p>
+                  <p><i class="far fa-clock me-2"></i>2025 / 10 / 08 ~ 10 / 15</p>
+                  <button class="btn mt-3">了解更多</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 text-left">
+              <div class="outer">
+                <a href="#">
+                  <div class="upper">
+                    <img src="img/venice.jpg" alt="">
+                    <div class="innertext">
+                      <span class="text-light fw-semibold">尚餘2個名額</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="lower">
+                  <h3>神秘的威尼斯：擁抱漂浮之城的浪漫氛圍</h3>
+                  <p><i class="fa-solid fa-terminal"></i></i>義大利威尼斯</p>
+                  <p><i class="far fa-clock me-2"></i>2025 / 10 / 12 ~ 10 / 22</p>
+                  <button class="btn mt-3">了解更多</button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 text-left">
+              <div class="outer">
+                <a href="#">
+                  <div class="upper">
+                    <img src="img/england.jpg" alt="">
+                    <div class="innertext">
+                      <span class="text-light fw-semibold">尚餘2個名額</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="lower">
+                  <h3>優雅的倫敦：感受英倫的獨特紳活</h3>
+                  <p><i class="fa-solid fa-terminal"></i></i>英國倫敦</p>
+                  <p><i class="far fa-clock me-2"></i>2025 / 10 / 08 ~ 10 / 15</p>
+                  <button class="btn mt-3">了解更多</button>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="email">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text-center">
+            <h3>訂閱 GOGO Travel</h3>
+          </div>
+          <div class="row">
+            <p>訂閱GOGO Travel，隨時掌握最新的最優質的旅遊資訊</p>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" aria-label="sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="請輸入E-mail">
+              </div>
+              <a class="btn btn-primary btn-lg mt-4" href="#" role="button">訂閱</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+                <div class="col-md-4">
+                    <img src="img/CJF.webp" alt="" width="170"> <!--alt是滑鼠移過去會顯示圖片的資訊-->
+                    <p>這裡有一行字<br>這裡也有一行字</p> <!--<p>段落 <br>換行-->
+                </div>
+                <div class = "col-md-4">
+                  <h4>網站地圖</h4>
+                    <ul>
+                      <li><a href ="#">首頁</a></li>
+                      <li><a href ="#">最新消息</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href ="#">Vue作品</a></li>
+                      <li><a href ="#">聯絡我們</a></li>
+                    </ul>
+                </div>
+                <div class = "col-md-4">
+                  <h4>聯絡我們</h4>
+                  <p>台北市大安區<br>
+                    Phone：(02)1234-5678<br>
+                    E-mail：<a href="mailto:gogtravel.gmail.com">gogtravel@gmail.com</a>
+                  </p>
+                </div>
+          </div>     
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>
