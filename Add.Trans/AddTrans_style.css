@@ -1,0 +1,86 @@
+
+  body {
+    background-color: rgb(33, 35, 35); /* 黑色背景 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+  }
+
+  /* body {
+    background-color: rgb(33, 35, 35);
+    }*/
+
+  #project_name h2 {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    font-family: "Noto Sans TC", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+
+  input, button {
+    font-size: 16px;
+    padding: 6px 10px;
+    margin: 5px;
+  }
+
+  #englishAddress {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    width: 400px;
+    height: 30px;
+    padding: 20px 12px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  #label_source{
+    font-family: "Microsoft JhengHei", sans-serif;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+
+  /* 以下為測試 */
+  /* 初始主題：亮色 */
+body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* 暗色主題樣式：當 checkbox 被勾選時 */
+  #themeToggle:checked ~ * body,
+  body:has(#themeToggle:checked) {
+    background-color: #121212;
+    color: #faebd7;
+  }
+  
+  body:has(#themeToggle:checked) input.form-control {
+    background-color: #333;
+    color: #faebd7;
+    border: 1px solid #555;
+  }
+  
+  /* 切換器樣式 */
+  .theme-toggle {
+    display: none;
+  }
+  
+  .toggle-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url("/img/moon-stars.png");
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* 切換後的圖示 */
+  #themeToggle:checked + .toggle-icon {
+    background-image: url("/img/brightness.png");
+  }
+  

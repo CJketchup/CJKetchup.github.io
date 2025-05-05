@@ -1,0 +1,1486 @@
+{
+  "臺北市中正區": {
+    "zip": "100",
+    "en": "Zhongzheng Dist., Taipei City"
+  },
+  "臺北市大同區": {
+    "zip": "103",
+    "en": "Datong Dist., Taipei City"
+  },
+  "臺北市中山區": {
+    "zip": "104",
+    "en": "Zhongshan Dist., Taipei City"
+  },
+  "臺北市松山區": {
+    "zip": "105",
+    "en": "Songshan Dist., Taipei City"
+  },
+  "臺北市大安區": {
+    "zip": "106",
+    "en": "Da’an Dist., Taipei City"
+  },
+  "臺北市萬華區": {
+    "zip": "108",
+    "en": "Wanhua Dist., Taipei City"
+  },
+  "臺北市信義區": {
+    "zip": "110",
+    "en": "Xinyi Dist., Taipei City"
+  },
+  "臺北市士林區": {
+    "zip": "111",
+    "en": "Shilin Dist., Taipei City"
+  },
+  "臺北市北投區": {
+    "zip": "112",
+    "en": "Beitou Dist., Taipei City"
+  },
+  "臺北市內湖區": {
+    "zip": "114",
+    "en": "Neihu Dist., Taipei City"
+  },
+  "臺北市南港區": {
+    "zip": "115",
+    "en": "Nangang Dist., Taipei City"
+  },
+  "臺北市文山區": {
+    "zip": "116",
+    "en": "Wenshan Dist., Taipei City"
+  },
+  "基隆市仁愛區": {
+    "zip": "200",
+    "en": "Ren’ai Dist., Keelung City"
+  },
+  "基隆市信義區": {
+    "zip": "201",
+    "en": "Xinyi Dist., Keelung City"
+  },
+  "基隆市中正區": {
+    "zip": "202",
+    "en": "Zhongzheng Dist., Keelung City"
+  },
+  "基隆市中山區": {
+    "zip": "203",
+    "en": "Zhongshan Dist., Keelung City"
+  },
+  "基隆市安樂區": {
+    "zip": "204",
+    "en": "Anle Dist., Keelung City"
+  },
+  "基隆市暖暖區": {
+    "zip": "205",
+    "en": "Nuannuan Dist., Keelung City"
+  },
+  "基隆市七堵區": {
+    "zip": "206",
+    "en": "Qidu Dist., Keelung City"
+  },
+  "新北市萬里區": {
+    "zip": "207",
+    "en": "Wanli Dist., New Taipei City"
+  },
+  "新北市金山區": {
+    "zip": "208",
+    "en": "Jinshan Dist., New Taipei City"
+  },
+  "連江縣南竿鄉": {
+    "zip": "209",
+    "en": "Nangan Township, Lienchiang County"
+  },
+  "連江縣北竿鄉": {
+    "zip": "210",
+    "en": "Beigan Township, Lienchiang County"
+  },
+  "連江縣莒光鄉": {
+    "zip": "211",
+    "en": "Juguang Township, Lienchiang County"
+  },
+  "連江縣東引鄉": {
+    "zip": "212",
+    "en": "Dongyin Township, Lienchiang County"
+  },
+  "新北市板橋區": {
+    "zip": "220",
+    "en": "Banqiao Dist., New Taipei City"
+  },
+  "新北市汐止區": {
+    "zip": "221",
+    "en": "Xizhi Dist., New Taipei City"
+  },
+  "新北市深坑區": {
+    "zip": "222",
+    "en": "Shenkeng Dist., New Taipei City"
+  },
+  "新北市石碇區": {
+    "zip": "223",
+    "en": "Shiding Dist., New Taipei City"
+  },
+  "新北市瑞芳區": {
+    "zip": "224",
+    "en": "Ruifang Dist., New Taipei City"
+  },
+  "新北市平溪區": {
+    "zip": "226",
+    "en": "Pingxi Dist., New Taipei City"
+  },
+  "新北市雙溪區": {
+    "zip": "227",
+    "en": "Shuangxi Dist., New Taipei City"
+  },
+  "新北市貢寮區": {
+    "zip": "228",
+    "en": "Gongliao Dist., New Taipei City"
+  },
+  "新北市新店區": {
+    "zip": "231",
+    "en": "Xindian Dist., New Taipei City"
+  },
+  "新北市坪林區": {
+    "zip": "232",
+    "en": "Pinglin Dist., New Taipei City"
+  },
+  "新北市烏來區": {
+    "zip": "233",
+    "en": "Wulai Dist., New Taipei City"
+  },
+  "新北市永和區": {
+    "zip": "234",
+    "en": "Yonghe Dist., New Taipei City"
+  },
+  "新北市中和區": {
+    "zip": "235",
+    "en": "Zhonghe Dist., New Taipei City"
+  },
+  "新北市土城區": {
+    "zip": "236",
+    "en": "Tucheng Dist., New Taipei City"
+  },
+  "新北市三峽區": {
+    "zip": "237",
+    "en": "Sanxia Dist., New Taipei City"
+  },
+  "新北市樹林區": {
+    "zip": "238",
+    "en": "Shulin Dist., New Taipei City"
+  },
+  "新北市鶯歌區": {
+    "zip": "239",
+    "en": "Yingge Dist., New Taipei City"
+  },
+  "新北市三重區": {
+    "zip": "241",
+    "en": "Sanchong Dist., New Taipei City"
+  },
+  "新北市新莊區": {
+    "zip": "242",
+    "en": "Xinzhuang Dist., New Taipei City"
+  },
+  "新北市泰山區": {
+    "zip": "243",
+    "en": "Taishan Dist., New Taipei City"
+  },
+  "新北市林口區": {
+    "zip": "244",
+    "en": "Linkou Dist., New Taipei City"
+  },
+  "新北市蘆洲區": {
+    "zip": "247",
+    "en": "Luzhou Dist., New Taipei City"
+  },
+  "新北市五股區": {
+    "zip": "248",
+    "en": "Wugu Dist., New Taipei City"
+  },
+  "新北市八里區": {
+    "zip": "249",
+    "en": "Bali Dist., New Taipei City"
+  },
+  "新北市淡水區": {
+    "zip": "251",
+    "en": "Tamsui Dist., New Taipei City"
+  },
+  "新北市三芝區": {
+    "zip": "252",
+    "en": "Sanzhi Dist., New Taipei City"
+  },
+  "新北市石門區": {
+    "zip": "253",
+    "en": "Shimen Dist., New Taipei City"
+  },
+  "宜蘭縣宜蘭市": {
+    "zip": "260",
+    "en": "Yilan City, Yilan County"
+  },
+  "宜蘭縣頭城鎮": {
+    "zip": "261",
+    "en": "Toucheng Township, Yilan County"
+  },
+  "宜蘭縣礁溪鄉": {
+    "zip": "262",
+    "en": "Jiaoxi Township, Yilan County"
+  },
+  "宜蘭縣壯圍鄉": {
+    "zip": "263",
+    "en": "Zhuangwei Township, Yilan County"
+  },
+  "宜蘭縣員山鄉": {
+    "zip": "264",
+    "en": "Yuanshan Township, Yilan County"
+  },
+  "宜蘭縣羅東鎮": {
+    "zip": "265",
+    "en": "Luodong Township, Yilan County"
+  },
+  "宜蘭縣三星鄉": {
+    "zip": "266",
+    "en": "Sanxing Township, Yilan County"
+  },
+  "宜蘭縣大同鄉": {
+    "zip": "267",
+    "en": "Datong Township, Yilan County"
+  },
+  "宜蘭縣五結鄉": {
+    "zip": "268",
+    "en": "Wujie Township, Yilan County"
+  },
+  "宜蘭縣冬山鄉": {
+    "zip": "269",
+    "en": "Dongshan Township, Yilan County"
+  },
+  "宜蘭縣蘇澳鎮": {
+    "zip": "270",
+    "en": "Su’ao Township, Yilan County"
+  },
+  "宜蘭縣南澳鄉": {
+    "zip": "272",
+    "en": "Nan’ao Township, Yilan County"
+  },
+  "釣魚台": {
+    "zip": "290",
+    "en": "Diaoyutai"
+  },
+  "新竹市東區": {
+    "zip": "300",
+    "en": "East Dist., Hsinchu City"
+  },
+  "新竹市北區": {
+    "zip": "300",
+    "en": "North Dist., Hsinchu City"
+  },
+  "新竹市香山區": {
+    "zip": "300",
+    "en": "Xiangshan Dist., Hsinchu City"
+  },
+  "新竹縣竹北市": {
+    "zip": "302",
+    "en": "Zhubei City, Hsinchu County"
+  },
+  "新竹縣湖口鄉": {
+    "zip": "303",
+    "en": "Hukou Township, Hsinchu County"
+  },
+  "新竹縣新豐鄉": {
+    "zip": "304",
+    "en": "Xinfeng Township, Hsinchu County"
+  },
+  "新竹縣新埔鎮": {
+    "zip": "305",
+    "en": "Xinpu Township, Hsinchu County"
+  },
+  "新竹縣關西鎮": {
+    "zip": "306",
+    "en": "Guanxi Township, Hsinchu County"
+  },
+  "新竹縣芎林鄉": {
+    "zip": "307",
+    "en": "Qionglin Township, Hsinchu County"
+  },
+  "新竹縣寶山鄉": {
+    "zip": "308",
+    "en": "Baoshan Township, Hsinchu County"
+  },
+  "新竹縣竹東鎮": {
+    "zip": "310",
+    "en": "Zhudong Township, Hsinchu County"
+  },
+  "新竹縣五峰鄉": {
+    "zip": "311",
+    "en": "Wufeng Township, Hsinchu County"
+  },
+  "新竹縣橫山鄉": {
+    "zip": "312",
+    "en": "Hengshan Township, Hsinchu County"
+  },
+  "新竹縣尖石鄉": {
+    "zip": "313",
+    "en": "Jianshi Township, Hsinchu County"
+  },
+  "新竹縣北埔鄉": {
+    "zip": "314",
+    "en": "Beipu Township, Hsinchu County"
+  },
+  "新竹縣峨眉鄉": {
+    "zip": "315",
+    "en": "Emei Township, Hsinchu County"
+  },
+  "桃園市中壢區": {
+    "zip": "320",
+    "en": "Zhongli Dist., Taoyuan City"
+  },
+  "桃園市平鎮區": {
+    "zip": "324",
+    "en": "Pingzhen Dist., Taoyuan City"
+  },
+  "桃園市龍潭區": {
+    "zip": "325",
+    "en": "Longtan Dist., Taoyuan City"
+  },
+  "桃園市楊梅區": {
+    "zip": "326",
+    "en": "Yangmei Dist., Taoyuan City"
+  },
+  "桃園市新屋區": {
+    "zip": "327",
+    "en": "Xinwu Dist., Taoyuan City"
+  },
+  "桃園市觀音區": {
+    "zip": "328",
+    "en": "Guanyin Dist., Taoyuan City"
+  },
+  "桃園市桃園區": {
+    "zip": "330",
+    "en": "Taoyuan Dist., Taoyuan City"
+  },
+  "桃園市龜山區": {
+    "zip": "333",
+    "en": "Guishan Dist., Taoyuan City"
+  },
+  "桃園市八德區": {
+    "zip": "334",
+    "en": "Bade Dist., Taoyuan City"
+  },
+  "桃園市大溪區": {
+    "zip": "335",
+    "en": "Daxi Dist., Taoyuan City"
+  },
+  "桃園市復興區": {
+    "zip": "336",
+    "en": "Fuxing Dist., Taoyuan City"
+  },
+  "桃園市大園區": {
+    "zip": "337",
+    "en": "Dayuan Dist., Taoyuan City"
+  },
+  "桃園市蘆竹區": {
+    "zip": "338",
+    "en": "Luzhu Dist., Taoyuan City"
+  },
+  "苗栗縣竹南鎮": {
+    "zip": "350",
+    "en": "Zhunan Township, Miaoli County"
+  },
+  "苗栗縣頭份市": {
+    "zip": "351",
+    "en": "Toufen City, Miaoli County"
+  },
+  "苗栗縣三灣鄉": {
+    "zip": "352",
+    "en": "Sanwan Township, Miaoli County"
+  },
+  "苗栗縣南庄鄉": {
+    "zip": "353",
+    "en": "Nanzhuang Township, Miaoli County"
+  },
+  "苗栗縣獅潭鄉": {
+    "zip": "354",
+    "en": "Shitan Township, Miaoli County"
+  },
+  "苗栗縣後龍鎮": {
+    "zip": "356",
+    "en": "Houlong Township, Miaoli County"
+  },
+  "苗栗縣通霄鎮": {
+    "zip": "357",
+    "en": "Tongxiao Township, Miaoli County"
+  },
+  "苗栗縣苑裡鎮": {
+    "zip": "358",
+    "en": "Yuanli Township, Miaoli County"
+  },
+  "苗栗縣苗栗市": {
+    "zip": "360",
+    "en": "Miaoli City, Miaoli County"
+  },
+  "苗栗縣造橋鄉": {
+    "zip": "361",
+    "en": "Zaoqiao Township, Miaoli County"
+  },
+  "苗栗縣頭屋鄉": {
+    "zip": "362",
+    "en": "Touwu Township, Miaoli County"
+  },
+  "苗栗縣公館鄉": {
+    "zip": "363",
+    "en": "Gongguan Township, Miaoli County"
+  },
+  "苗栗縣大湖鄉": {
+    "zip": "364",
+    "en": "Dahu Township, Miaoli County"
+  },
+  "苗栗縣泰安鄉": {
+    "zip": "365",
+    "en": "Tai’an Township, Miaoli County"
+  },
+  "苗栗縣銅鑼鄉": {
+    "zip": "366",
+    "en": "Tongluo Township, Miaoli County"
+  },
+  "苗栗縣三義鄉": {
+    "zip": "367",
+    "en": "Sanyi Township, Miaoli County"
+  },
+  "苗栗縣西湖鄉": {
+    "zip": "368",
+    "en": "Xihu Township, Miaoli County"
+  },
+  "苗栗縣卓蘭鎮": {
+    "zip": "369",
+    "en": "Zhuolan Township, Miaoli County"
+  },
+  "臺中市中區": {
+    "zip": "400",
+    "en": "Central Dist., Taichung City"
+  },
+  "臺中市東區": {
+    "zip": "401",
+    "en": "East Dist., Taichung City"
+  },
+  "臺中市南區": {
+    "zip": "402",
+    "en": "South Dist., Taichung City"
+  },
+  "臺中市西區": {
+    "zip": "403",
+    "en": "West Dist., Taichung City"
+  },
+  "臺中市北區": {
+    "zip": "404",
+    "en": "North Dist., Taichung City"
+  },
+  "臺中市北屯區": {
+    "zip": "406",
+    "en": "Beitun Dist., Taichung City"
+  },
+  "臺中市西屯區": {
+    "zip": "407",
+    "en": "Xitun Dist., Taichung City"
+  },
+  "臺中市南屯區": {
+    "zip": "408",
+    "en": "Nantun Dist., Taichung City"
+  },
+  "臺中市太平區": {
+    "zip": "411",
+    "en": "Taiping Dist., Taichung City"
+  },
+  "臺中市大里區": {
+    "zip": "412",
+    "en": "Dali Dist., Taichung City"
+  },
+  "臺中市霧峰區": {
+    "zip": "413",
+    "en": "Wufeng Dist., Taichung City"
+  },
+  "臺中市烏日區": {
+    "zip": "414",
+    "en": "Wuri Dist., Taichung City"
+  },
+  "臺中市豐原區": {
+    "zip": "420",
+    "en": "Fengyuan Dist., Taichung City"
+  },
+  "臺中市后里區": {
+    "zip": "421",
+    "en": "Houli Dist., Taichung City"
+  },
+  "臺中市石岡區": {
+    "zip": "422",
+    "en": "Shigang Dist., Taichung City"
+  },
+  "臺中市東勢區": {
+    "zip": "423",
+    "en": "Dongshi Dist., Taichung City"
+  },
+  "臺中市和平區": {
+    "zip": "424",
+    "en": "Heping Dist., Taichung City"
+  },
+  "臺中市新社區": {
+    "zip": "426",
+    "en": "Xinshe Dist., Taichung City"
+  },
+  "臺中市潭子區": {
+    "zip": "427",
+    "en": "Tanzi Dist., Taichung City"
+  },
+  "臺中市大雅區": {
+    "zip": "428",
+    "en": "Daya Dist., Taichung City"
+  },
+  "臺中市神岡區": {
+    "zip": "429",
+    "en": "Shengang Dist., Taichung City"
+  },
+  "臺中市大肚區": {
+    "zip": "432",
+    "en": "Dadu Dist., Taichung City"
+  },
+  "臺中市沙鹿區": {
+    "zip": "433",
+    "en": "Shalu Dist., Taichung City"
+  },
+  "臺中市龍井區": {
+    "zip": "434",
+    "en": "Longjing Dist., Taichung City"
+  },
+  "臺中市梧棲區": {
+    "zip": "435",
+    "en": "Wuqi Dist., Taichung City"
+  },
+  "臺中市清水區": {
+    "zip": "436",
+    "en": "Qingshui Dist., Taichung City"
+  },
+  "臺中市大甲區": {
+    "zip": "437",
+    "en": "Dajia Dist., Taichung City"
+  },
+  "臺中市外埔區": {
+    "zip": "438",
+    "en": "Waipu Dist., Taichung City"
+  },
+  "臺中市大安區": {
+    "zip": "439",
+    "en": "Da’an Dist., Taichung City"
+  },
+  "彰化縣彰化市": {
+    "zip": "500",
+    "en": "Changhua City, Changhua County"
+  },
+  "彰化縣芬園鄉": {
+    "zip": "502",
+    "en": "Fenyuan Township, Changhua County"
+  },
+  "彰化縣花壇鄉": {
+    "zip": "503",
+    "en": "Huatan Township, Changhua County"
+  },
+  "彰化縣秀水鄉": {
+    "zip": "504",
+    "en": "Xiushui Township, Changhua County"
+  },
+  "彰化縣鹿港鎮": {
+    "zip": "505",
+    "en": "Lukang Township, Changhua County"
+  },
+  "彰化縣福興鄉": {
+    "zip": "506",
+    "en": "Fuxing Township, Changhua County"
+  },
+  "彰化縣線西鄉": {
+    "zip": "507",
+    "en": "Xianxi Township, Changhua County"
+  },
+  "彰化縣和美鎮": {
+    "zip": "508",
+    "en": "Hemei Township, Changhua County"
+  },
+  "彰化縣伸港鄉": {
+    "zip": "509",
+    "en": "Shengang Township, Changhua County"
+  },
+  "彰化縣員林市": {
+    "zip": "510",
+    "en": "Yuanlin City, Changhua County"
+  },
+  "彰化縣社頭鄉": {
+    "zip": "511",
+    "en": "Shetou Township, Changhua County"
+  },
+  "彰化縣永靖鄉": {
+    "zip": "512",
+    "en": "Yongjing Township, Changhua County"
+  },
+  "彰化縣埔心鄉": {
+    "zip": "513",
+    "en": "Puxin Township, Changhua County"
+  },
+  "彰化縣溪湖鎮": {
+    "zip": "514",
+    "en": "Xihu Township, Changhua County"
+  },
+  "彰化縣大村鄉": {
+    "zip": "515",
+    "en": "Dacun Township, Changhua County"
+  },
+  "彰化縣埔鹽鄉": {
+    "zip": "516",
+    "en": "Puyan Township, Changhua County"
+  },
+  "彰化縣田中鎮": {
+    "zip": "520",
+    "en": "Tianzhong Township, Changhua County"
+  },
+  "彰化縣北斗鎮": {
+    "zip": "521",
+    "en": "Beidou Township, Changhua County"
+  },
+  "彰化縣田尾鄉": {
+    "zip": "522",
+    "en": "Tianwei Township, Changhua County"
+  },
+  "彰化縣埤頭鄉": {
+    "zip": "523",
+    "en": "Pitou Township, Changhua County"
+  },
+  "彰化縣溪州鄉": {
+    "zip": "524",
+    "en": "Xizhou Township, Changhua County"
+  },
+  "彰化縣竹塘鄉": {
+    "zip": "525",
+    "en": "Zhutang Township, Changhua County"
+  },
+  "彰化縣二林鎮": {
+    "zip": "526",
+    "en": "Erlin Township, Changhua County"
+  },
+  "彰化縣大城鄉": {
+    "zip": "527",
+    "en": "Dacheng Township, Changhua County"
+  },
+  "彰化縣芳苑鄉": {
+    "zip": "528",
+    "en": "Fangyuan Township, Changhua County"
+  },
+  "彰化縣二水鄉": {
+    "zip": "530",
+    "en": "Ershui Township, Changhua County"
+  },
+  "南投縣南投市": {
+    "zip": "540",
+    "en": "Nantou City, Nantou County"
+  },
+  "南投縣中寮鄉": {
+    "zip": "541",
+    "en": "Zhongliao Township, Nantou County"
+  },
+  "南投縣草屯鎮": {
+    "zip": "542",
+    "en": "Caotun Township, Nantou County"
+  },
+  "南投縣國姓鄉": {
+    "zip": "544",
+    "en": "Guoxing Township, Nantou County"
+  },
+  "南投縣埔里鎮": {
+    "zip": "545",
+    "en": "Puli Township, Nantou County"
+  },
+  "南投縣仁愛鄉": {
+    "zip": "546",
+    "en": "Ren’ai Township, Nantou County"
+  },
+  "南投縣名間鄉": {
+    "zip": "551",
+    "en": "Mingjian Township, Nantou County"
+  },
+  "南投縣集集鎮": {
+    "zip": "552",
+    "en": "Jiji Township, Nantou County"
+  },
+  "南投縣水里鄉": {
+    "zip": "553",
+    "en": "Shuili Township, Nantou County"
+  },
+  "南投縣魚池鄉": {
+    "zip": "555",
+    "en": "Yuchi Township, Nantou County"
+  },
+  "南投縣信義鄉": {
+    "zip": "556",
+    "en": "Xinyi Township, Nantou County"
+  },
+  "南投縣竹山鎮": {
+    "zip": "557",
+    "en": "Zhushan Township, Nantou County"
+  },
+  "南投縣鹿谷鄉": {
+    "zip": "558",
+    "en": "Lugu Township, Nantou County"
+  },
+  "嘉義市東區": {
+    "zip": "600",
+    "en": "East Dist., Chiayi City"
+  },
+  "嘉義市西區": {
+    "zip": "600",
+    "en": "West Dist., Chiayi City"
+  },
+  "嘉義縣番路鄉": {
+    "zip": "602",
+    "en": "Fanlu Township, Chiayi County"
+  },
+  "嘉義縣梅山鄉": {
+    "zip": "603",
+    "en": "Meishan Township, Chiayi County"
+  },
+  "嘉義縣竹崎鄉": {
+    "zip": "604",
+    "en": "Zhuqi Township, Chiayi County"
+  },
+  "嘉義縣阿里山鄉": {
+    "zip": "605",
+    "en": "Alishan Township, Chiayi County"
+  },
+  "嘉義縣中埔鄉": {
+    "zip": "606",
+    "en": "Zhongpu Township, Chiayi County"
+  },
+  "嘉義縣大埔鄉": {
+    "zip": "607",
+    "en": "Dapu Township, Chiayi County"
+  },
+  "嘉義縣水上鄉": {
+    "zip": "608",
+    "en": "Shuishang Township, Chiayi County"
+  },
+  "嘉義縣鹿草鄉": {
+    "zip": "611",
+    "en": "Lucao Township, Chiayi County"
+  },
+  "嘉義縣太保市": {
+    "zip": "612",
+    "en": "Taibao City, Chiayi County"
+  },
+  "嘉義縣朴子市": {
+    "zip": "613",
+    "en": "Puzi City, Chiayi County"
+  },
+  "嘉義縣東石鄉": {
+    "zip": "614",
+    "en": "Dongshi Township, Chiayi County"
+  },
+  "嘉義縣六腳鄉": {
+    "zip": "615",
+    "en": "Liujiao Township, Chiayi County"
+  },
+  "嘉義縣新港鄉": {
+    "zip": "616",
+    "en": "Xingang Township, Chiayi County"
+  },
+  "嘉義縣民雄鄉": {
+    "zip": "621",
+    "en": "Minxiong Township, Chiayi County"
+  },
+  "嘉義縣大林鎮": {
+    "zip": "622",
+    "en": "Dalin Township, Chiayi County"
+  },
+  "嘉義縣溪口鄉": {
+    "zip": "623",
+    "en": "Xikou Township, Chiayi County"
+  },
+  "嘉義縣義竹鄉": {
+    "zip": "624",
+    "en": "Yizhu Township, Chiayi County"
+  },
+  "嘉義縣布袋鎮": {
+    "zip": "625",
+    "en": "Budai Township, Chiayi County"
+  },
+  "雲林縣斗南鎮": {
+    "zip": "630",
+    "en": "Dounan Township, Yunlin County"
+  },
+  "雲林縣大埤鄉": {
+    "zip": "631",
+    "en": "Dapi Township, Yunlin County"
+  },
+  "雲林縣虎尾鎮": {
+    "zip": "632",
+    "en": "Huwei Township, Yunlin County"
+  },
+  "雲林縣土庫鎮": {
+    "zip": "633",
+    "en": "Tuku Township, Yunlin County"
+  },
+  "雲林縣褒忠鄉": {
+    "zip": "634",
+    "en": "Baozhong Township, Yunlin County"
+  },
+  "雲林縣東勢鄉": {
+    "zip": "635",
+    "en": "Dongshi Township, Yunlin County"
+  },
+  "雲林縣臺西鄉": {
+    "zip": "636",
+    "en": "Taixi Township, Yunlin County"
+  },
+  "雲林縣崙背鄉": {
+    "zip": "637",
+    "en": "Lunbei Township, Yunlin County"
+  },
+  "雲林縣麥寮鄉": {
+    "zip": "638",
+    "en": "Mailiao Township, Yunlin County"
+  },
+  "雲林縣斗六市": {
+    "zip": "640",
+    "en": "Douliu City, Yunlin County"
+  },
+  "雲林縣林內鄉": {
+    "zip": "643",
+    "en": "Linnei Township, Yunlin County"
+  },
+  "雲林縣古坑鄉": {
+    "zip": "646",
+    "en": "Gukeng Township, Yunlin County"
+  },
+  "雲林縣莿桐鄉": {
+    "zip": "647",
+    "en": "Citong Township, Yunlin County"
+  },
+  "雲林縣西螺鎮": {
+    "zip": "648",
+    "en": "Xiluo Township, Yunlin County"
+  },
+  "雲林縣二崙鄉": {
+    "zip": "649",
+    "en": "Erlun Township, Yunlin County"
+  },
+  "雲林縣北港鎮": {
+    "zip": "651",
+    "en": "Beigang Township, Yunlin County"
+  },
+  "雲林縣水林鄉": {
+    "zip": "652",
+    "en": "Shuilin Township, Yunlin County"
+  },
+  "雲林縣口湖鄉": {
+    "zip": "653",
+    "en": "Kouhu Township, Yunlin County"
+  },
+  "雲林縣四湖鄉": {
+    "zip": "654",
+    "en": "Sihu Township, Yunlin County"
+  },
+  "雲林縣元長鄉": {
+    "zip": "655",
+    "en": "Yuanzhang Township, Yunlin County"
+  },
+  "臺南市中西區": {
+    "zip": "700",
+    "en": "West Central Dist., Tainan City"
+  },
+  "臺南市東區": {
+    "zip": "701",
+    "en": "East Dist., Tainan City"
+  },
+  "臺南市南區": {
+    "zip": "702",
+    "en": "South Dist., Tainan City"
+  },
+  "臺南市北區": {
+    "zip": "704",
+    "en": "North Dist., Tainan City"
+  },
+  "臺南市安平區": {
+    "zip": "708",
+    "en": "Anping Dist., Tainan City"
+  },
+  "臺南市安南區": {
+    "zip": "709",
+    "en": "Annan Dist., Tainan City"
+  },
+  "臺南市永康區": {
+    "zip": "710",
+    "en": "Yongkang Dist., Tainan City"
+  },
+  "臺南市歸仁區": {
+    "zip": "711",
+    "en": "Guiren Dist., Tainan City"
+  },
+  "臺南市新化區": {
+    "zip": "712",
+    "en": "Xinhua Dist., Tainan City"
+  },
+  "臺南市左鎮區": {
+    "zip": "713",
+    "en": "Zuozhen Dist., Tainan City"
+  },
+  "臺南市玉井區": {
+    "zip": "714",
+    "en": "Yujing Dist., Tainan City"
+  },
+  "臺南市楠西區": {
+    "zip": "715",
+    "en": "Nanxi Dist., Tainan City"
+  },
+  "臺南市南化區": {
+    "zip": "716",
+    "en": "Nanhua Dist., Tainan City"
+  },
+  "臺南市仁德區": {
+    "zip": "717",
+    "en": "Rende Dist., Tainan City"
+  },
+  "臺南市關廟區": {
+    "zip": "718",
+    "en": "Guanmiao Dist., Tainan City"
+  },
+  "臺南市龍崎區": {
+    "zip": "719",
+    "en": "Longqi Dist., Tainan City"
+  },
+  "臺南市官田區": {
+    "zip": "720",
+    "en": "Guantian Dist., Tainan City"
+  },
+  "臺南市麻豆區": {
+    "zip": "721",
+    "en": "Madou Dist., Tainan City"
+  },
+  "臺南市佳里區": {
+    "zip": "722",
+    "en": "Jiali Dist., Tainan City"
+  },
+  "臺南市西港區": {
+    "zip": "723",
+    "en": "Xigang Dist., Tainan City"
+  },
+  "臺南市七股區": {
+    "zip": "724",
+    "en": "Qigu Dist., Tainan City"
+  },
+  "臺南市將軍區": {
+    "zip": "725",
+    "en": "Jiangjun Dist., Tainan City"
+  },
+  "臺南市學甲區": {
+    "zip": "726",
+    "en": "Xuejia Dist., Tainan City"
+  },
+  "臺南市北門區": {
+    "zip": "727",
+    "en": "Beimen Dist., Tainan City"
+  },
+  "臺南市新營區": {
+    "zip": "730",
+    "en": "Xinying Dist., Tainan City"
+  },
+  "臺南市後壁區": {
+    "zip": "731",
+    "en": "Houbi Dist., Tainan City"
+  },
+  "臺南市白河區": {
+    "zip": "732",
+    "en": "Baihe Dist., Tainan City"
+  },
+  "臺南市東山區": {
+    "zip": "733",
+    "en": "Dongshan Dist., Tainan City"
+  },
+  "臺南市六甲區": {
+    "zip": "734",
+    "en": "Liujia Dist., Tainan City"
+  },
+  "臺南市下營區": {
+    "zip": "735",
+    "en": "Xiaying Dist., Tainan City"
+  },
+  "臺南市柳營區": {
+    "zip": "736",
+    "en": "Liuying Dist., Tainan City"
+  },
+  "臺南市鹽水區": {
+    "zip": "737",
+    "en": "Yanshui Dist., Tainan City"
+  },
+  "臺南市善化區": {
+    "zip": "741",
+    "en": "Shanhua Dist., Tainan City"
+  },
+  "臺南市大內區": {
+    "zip": "742",
+    "en": "Danei Dist., Tainan City"
+  },
+  "臺南市山上區": {
+    "zip": "743",
+    "en": "Shanshang Dist., Tainan City"
+  },
+  "臺南市新市區": {
+    "zip": "744",
+    "en": "Xinshi Dist., Tainan City"
+  },
+  "臺南市安定區": {
+    "zip": "745",
+    "en": "Anding Dist., Tainan City"
+  },
+  "高雄市新興區": {
+    "zip": "800",
+    "en": "Xinxing Dist., Kaohsiung City"
+  },
+  "高雄市前金區": {
+    "zip": "801",
+    "en": "Qianjin Dist., Kaohsiung City"
+  },
+  "高雄市苓雅區": {
+    "zip": "802",
+    "en": "Lingya Dist., Kaohsiung City"
+  },
+  "高雄市鹽埕區": {
+    "zip": "803",
+    "en": "Yancheng Dist., Kaohsiung City"
+  },
+  "高雄市鼓山區": {
+    "zip": "804",
+    "en": "Gushan Dist., Kaohsiung City"
+  },
+  "高雄市旗津區": {
+    "zip": "805",
+    "en": "Qijin Dist., Kaohsiung City"
+  },
+  "高雄市前鎮區": {
+    "zip": "806",
+    "en": "Qianzhen Dist., Kaohsiung City"
+  },
+  "高雄市三民區": {
+    "zip": "807",
+    "en": "Sanmin Dist., Kaohsiung City"
+  },
+  "高雄市楠梓區": {
+    "zip": "811",
+    "en": "Nanzi Dist., Kaohsiung City"
+  },
+  "高雄市小港區": {
+    "zip": "812",
+    "en": "Xiaogang Dist., Kaohsiung City"
+  },
+  "高雄市左營區": {
+    "zip": "813",
+    "en": "Zuoying Dist., Kaohsiung City"
+  },
+  "高雄市仁武區": {
+    "zip": "814",
+    "en": "Renwu Dist., Kaohsiung City"
+  },
+  "高雄市大社區": {
+    "zip": "815",
+    "en": "Dashe Dist., Kaohsiung City"
+  },
+  "高雄市東沙群島": {
+    "zip": "817",
+    "en": "Dongsha Islands, Nanhai Islands"
+  },
+  "高雄市南沙群島": {
+    "zip": "819",
+    "en": "Nansha Islands, Nanhai Islands"
+  },
+  "高雄市岡山區": {
+    "zip": "820",
+    "en": "Gangshan Dist., Kaohsiung City"
+  },
+  "高雄市路竹區": {
+    "zip": "821",
+    "en": "Luzhu Dist., Kaohsiung City"
+  },
+  "高雄市阿蓮區": {
+    "zip": "822",
+    "en": "Alian Dist., Kaohsiung City"
+  },
+  "高雄市田寮區": {
+    "zip": "823",
+    "en": "Tianliao Dist., Kaohsiung City"
+  },
+  "高雄市燕巢區": {
+    "zip": "824",
+    "en": "Yanchao Dist., Kaohsiung City"
+  },
+  "高雄市橋頭區": {
+    "zip": "825",
+    "en": "Qiaotou Dist., Kaohsiung City"
+  },
+  "高雄市梓官區": {
+    "zip": "826",
+    "en": "Ziguan Dist., Kaohsiung City"
+  },
+  "高雄市彌陀區": {
+    "zip": "827",
+    "en": "Mituo Dist., Kaohsiung City"
+  },
+  "高雄市永安區": {
+    "zip": "828",
+    "en": "Yong’an Dist., Kaohsiung City"
+  },
+  "高雄市湖內區": {
+    "zip": "829",
+    "en": "Hunei Dist., Kaohsiung City"
+  },
+  "高雄市鳳山區": {
+    "zip": "830",
+    "en": "Fengshan Dist., Kaohsiung City"
+  },
+  "高雄市大寮區": {
+    "zip": "831",
+    "en": "Daliao Dist., Kaohsiung City"
+  },
+  "高雄市林園區": {
+    "zip": "832",
+    "en": "Linyuan Dist., Kaohsiung City"
+  },
+  "高雄市鳥松區": {
+    "zip": "833",
+    "en": "Niaosong Dist., Kaohsiung City"
+  },
+  "高雄市大樹區": {
+    "zip": "840",
+    "en": "Dashu Dist., Kaohsiung City"
+  },
+  "高雄市旗山區": {
+    "zip": "842",
+    "en": "Qishan Dist., Kaohsiung City"
+  },
+  "高雄市美濃區": {
+    "zip": "843",
+    "en": "Meinong Dist., Kaohsiung City"
+  },
+  "高雄市六龜區": {
+    "zip": "844",
+    "en": "Liugui Dist., Kaohsiung City"
+  },
+  "高雄市內門區": {
+    "zip": "845",
+    "en": "Neimen Dist., Kaohsiung City"
+  },
+  "高雄市杉林區": {
+    "zip": "846",
+    "en": "Shanlin Dist., Kaohsiung City"
+  },
+  "高雄市甲仙區": {
+    "zip": "847",
+    "en": "Jiaxian Dist., Kaohsiung City"
+  },
+  "高雄市桃源區": {
+    "zip": "848",
+    "en": "Taoyuan Dist., Kaohsiung City"
+  },
+  "高雄市那瑪夏區": {
+    "zip": "849",
+    "en": "Namaxia Dist., Kaohsiung City"
+  },
+  "高雄市茂林區": {
+    "zip": "851",
+    "en": "Maolin Dist., Kaohsiung City"
+  },
+  "高雄市茄萣區": {
+    "zip": "852",
+    "en": "Qieding Dist., Kaohsiung City"
+  },
+  "澎湖縣馬公市": {
+    "zip": "880",
+    "en": "Magong City, Penghu County"
+  },
+  "澎湖縣西嶼鄉": {
+    "zip": "881",
+    "en": "Xiyu Township, Penghu County"
+  },
+  "澎湖縣望安鄉": {
+    "zip": "882",
+    "en": "Wang’an Township, Penghu County"
+  },
+  "澎湖縣七美鄉": {
+    "zip": "883",
+    "en": "Qimei Township, Penghu County"
+  },
+  "澎湖縣白沙鄉": {
+    "zip": "884",
+    "en": "Baisha Township, Penghu County"
+  },
+  "澎湖縣湖西鄉": {
+    "zip": "885",
+    "en": "Huxi Township, Penghu County"
+  },
+  "金門縣金沙鎮": {
+    "zip": "890",
+    "en": "Jinsha Township, Kinmen County"
+  },
+  "金門縣金湖鎮": {
+    "zip": "891",
+    "en": "Jinhu Township, Kinmen County"
+  },
+  "金門縣金寧鄉": {
+    "zip": "892",
+    "en": "Jinning Township, Kinmen County"
+  },
+  "金門縣金城鎮": {
+    "zip": "893",
+    "en": "Jincheng Township, Kinmen County"
+  },
+  "金門縣烈嶼鄉": {
+    "zip": "894",
+    "en": "Lieyu Township, Kinmen County"
+  },
+  "金門縣烏坵鄉": {
+    "zip": "896",
+    "en": "Wuqiu Township, Kinmen County"
+  },
+  "屏東縣屏東市": {
+    "zip": "900",
+    "en": "Pingtung City, Pingtung County"
+  },
+  "屏東縣三地門鄉": {
+    "zip": "901",
+    "en": "Sandimen Township, Pingtung County"
+  },
+  "屏東縣霧臺鄉": {
+    "zip": "902",
+    "en": "Wutai Township, Pingtung County"
+  },
+  "屏東縣瑪家鄉": {
+    "zip": "903",
+    "en": "Majia Township, Pingtung County"
+  },
+  "屏東縣九如鄉": {
+    "zip": "904",
+    "en": "Jiuru Township, Pingtung County"
+  },
+  "屏東縣里港鄉": {
+    "zip": "905",
+    "en": "Ligang Township, Pingtung County"
+  },
+  "屏東縣高樹鄉": {
+    "zip": "906",
+    "en": "Gaoshu Township, Pingtung County"
+  },
+  "屏東縣鹽埔鄉": {
+    "zip": "907",
+    "en": "Yanpu Township, Pingtung County"
+  },
+  "屏東縣長治鄉": {
+    "zip": "908",
+    "en": "Changzhi Township, Pingtung County"
+  },
+  "屏東縣麟洛鄉": {
+    "zip": "909",
+    "en": "Linluo Township, Pingtung County"
+  },
+  "屏東縣竹田鄉": {
+    "zip": "911",
+    "en": "Zhutian Township, Pingtung County"
+  },
+  "屏東縣內埔鄉": {
+    "zip": "912",
+    "en": "Neipu Township, Pingtung County"
+  },
+  "屏東縣萬丹鄉": {
+    "zip": "913",
+    "en": "Wandan Township, Pingtung County"
+  },
+  "屏東縣潮州鎮": {
+    "zip": "920",
+    "en": "Chaozhou Township, Pingtung County"
+  },
+  "屏東縣泰武鄉": {
+    "zip": "921",
+    "en": "Taiwu Township, Pingtung County"
+  },
+  "屏東縣來義鄉": {
+    "zip": "922",
+    "en": "Laiyi Township, Pingtung County"
+  },
+  "屏東縣萬巒鄉": {
+    "zip": "923",
+    "en": "Wanluan Township, Pingtung County"
+  },
+  "屏東縣崁頂鄉": {
+    "zip": "924",
+    "en": "Kanding Township, Pingtung County"
+  },
+  "屏東縣新埤鄉": {
+    "zip": "925",
+    "en": "Xinpi Township, Pingtung County"
+  },
+  "屏東縣南州鄉": {
+    "zip": "926",
+    "en": "Nanzhou Township, Pingtung County"
+  },
+  "屏東縣林邊鄉": {
+    "zip": "927",
+    "en": "Linbian Township, Pingtung County"
+  },
+  "屏東縣東港鎮": {
+    "zip": "928",
+    "en": "Donggang Township, Pingtung County"
+  },
+  "屏東縣琉球鄉": {
+    "zip": "929",
+    "en": "Liuqiu Township, Pingtung County"
+  },
+  "屏東縣佳冬鄉": {
+    "zip": "931",
+    "en": "Jiadong Township, Pingtung County"
+  },
+  "屏東縣新園鄉": {
+    "zip": "932",
+    "en": "Xinyuan Township, Pingtung County"
+  },
+  "屏東縣枋寮鄉": {
+    "zip": "940",
+    "en": "Fangliao Township, Pingtung County"
+  },
+  "屏東縣枋山鄉": {
+    "zip": "941",
+    "en": "Fangshan Township, Pingtung County"
+  },
+  "屏東縣春日鄉": {
+    "zip": "942",
+    "en": "Chunri Township, Pingtung County"
+  },
+  "屏東縣獅子鄉": {
+    "zip": "943",
+    "en": "Shizi Township, Pingtung County"
+  },
+  "屏東縣車城鄉": {
+    "zip": "944",
+    "en": "Checheng Township, Pingtung County"
+  },
+  "屏東縣牡丹鄉": {
+    "zip": "945",
+    "en": "Mudan Township, Pingtung County"
+  },
+  "屏東縣恆春鎮": {
+    "zip": "946",
+    "en": "Hengchun Township, Pingtung County"
+  },
+  "屏東縣滿州鄉": {
+    "zip": "947",
+    "en": "Manzhou Township, Pingtung County"
+  },
+  "臺東縣臺東市": {
+    "zip": "950",
+    "en": "Taitung City, Taitung County"
+  },
+  "臺東縣綠島鄉": {
+    "zip": "951",
+    "en": "Ludao Township, Taitung County"
+  },
+  "臺東縣蘭嶼鄉": {
+    "zip": "952",
+    "en": "Lanyu Township, Taitung County"
+  },
+  "臺東縣延平鄉": {
+    "zip": "953",
+    "en": "Yanping Township, Taitung County"
+  },
+  "臺東縣卑南鄉": {
+    "zip": "954",
+    "en": "Beinan Township, Taitung County"
+  },
+  "臺東縣鹿野鄉": {
+    "zip": "955",
+    "en": "Luye Township, Taitung County"
+  },
+  "臺東縣關山鎮": {
+    "zip": "956",
+    "en": "Guanshan Township, Taitung County"
+  },
+  "臺東縣海端鄉": {
+    "zip": "957",
+    "en": "Haiduan Township, Taitung County"
+  },
+  "臺東縣池上鄉": {
+    "zip": "958",
+    "en": "Chishang Township, Taitung County"
+  },
+  "臺東縣東河鄉": {
+    "zip": "959",
+    "en": "Donghe Township, Taitung County"
+  },
+  "臺東縣成功鎮": {
+    "zip": "961",
+    "en": "Chenggong Township, Taitung County"
+  },
+  "臺東縣長濱鄉": {
+    "zip": "962",
+    "en": "Changbin Township, Taitung County"
+  },
+  "臺東縣太麻里鄉": {
+    "zip": "963",
+    "en": "Taimali Township, Taitung County"
+  },
+  "臺東縣金峰鄉": {
+    "zip": "964",
+    "en": "Jinfeng Township, Taitung County"
+  },
+  "臺東縣大武鄉": {
+    "zip": "965",
+    "en": "Dawu Township, Taitung County"
+  },
+  "臺東縣達仁鄉": {
+    "zip": "966",
+    "en": "Daren Township, Taitung County"
+  },
+  "花蓮縣花蓮市": {
+    "zip": "970",
+    "en": "Hualien City, Hualien County"
+  },
+  "花蓮縣新城鄉": {
+    "zip": "971",
+    "en": "Xincheng Township, Hualien County"
+  },
+  "花蓮縣秀林鄉": {
+    "zip": "972",
+    "en": "Xiulin Township, Hualien County"
+  },
+  "花蓮縣吉安鄉": {
+    "zip": "973",
+    "en": "Ji’an Township, Hualien County"
+  },
+  "花蓮縣壽豐鄉": {
+    "zip": "974",
+    "en": "Shoufeng Township, Hualien County"
+  },
+  "花蓮縣鳳林鎮": {
+    "zip": "975",
+    "en": "Fenglin Township, Hualien County"
+  },
+  "花蓮縣光復鄉": {
+    "zip": "976",
+    "en": "Guangfu Township, Hualien County"
+  },
+  "花蓮縣豐濱鄉": {
+    "zip": "977",
+    "en": "Fengbin Township, Hualien County"
+  },
+  "花蓮縣瑞穗鄉": {
+    "zip": "978",
+    "en": "Ruisui Township, Hualien County"
+  },
+  "花蓮縣萬榮鄉": {
+    "zip": "979",
+    "en": "Wanrong Township, Hualien County"
+  },
+  "花蓮縣玉里鎮": {
+    "zip": "981",
+    "en": "Yuli Township, Hualien County"
+  },
+  "花蓮縣卓溪鄉": {
+    "zip": "982",
+    "en": "Zhuoxi Township, Hualien County"
+  },
+  "花蓮縣富里鄉": {
+    "zip": "983",
+    "en": "Fuli Township, Hualien County"
+  }
+}

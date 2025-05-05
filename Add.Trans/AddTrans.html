@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="html, css, 網頁, JS, javascript">
+  <meta name="description" content="Here is my page.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Ketchup" content="Chiao">
+
+  <!--css-->
+  <link rel="stylesheet" href="AddTrans_style.css">
+  <title>地址中翻英轉換器</title>
+  <!-- bootstrap js css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"></script>
+ 
+  <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <script>
+    let countyMapping = {};
+    let addressMapping = {};
+    let streetMapping = {};
+    
+    // 在 DOM 載入後 fetch JSON 檔案
+    window.onload = () => {
+      Promise.all([
+        fetch('County_address_mapping_with_zip.json').then(res => res.json()),
+        fetch('address_mapping.json').then(res => res.json()),
+        fetch('street_mapping.json').then(res => res.json())
+      ]).then(([county, address, street]) => {
+        countyMapping = county;
+        addressMapping = address;
+        streetMapping = street;
+        console.log("JSON 讀取完成");
+      });
+      document.getElementById("chineseAddress").addEventListener("input", convertAddress);
+    };
+    function convertAddress() {
+      let input = document.getElementById('chineseAddress').value.trim();
+      input = input.replace(/台/g, '臺');
+      let result = '';
+      let original = input;
+
+      // 比對縣市區（依長度排序）
+      const sortedCounty = Object.keys(countyMapping).sort((a, b) => b.length - a.length);
+      let matched = false;
+
+      for (let key of sortedCounty) {
+        if (input.includes(key)) {
+          result += (countyMapping[key].zip ? countyMapping[key].zip + ' ' : '') + countyMapping[key].en + ', ';
+          input = input.replace(key, '');
+          matched = true;
+          break;
+        }
+      }
+
+      // ✅ fallback：如果沒找到完整的縣市區，嘗試找「縣市」字串
+      if (!matched) {
+        for (let key of sortedCounty) {
+          const cityOnly = key.slice(0, 3); // 取"臺南市"、"臺北市"
+          if (input.startsWith(cityOnly)) {
+            result += countyMapping[key].en.split(',')[1]?.trim() + ', '; // 只取 City 名稱
+            input = input.replace(cityOnly, '');
+            break;
+          }
+        }
+      }
+
+      // 比對地址成分（長的優先）
+      [addressMapping, streetMapping].forEach(mapping => {
+        const sortedKeys = Object.keys(mapping).sort((a, b) => b.length - a.length);
+        for (let key of sortedKeys) {
+          if (input.includes(key)) {
+            result += mapping[key] + ', ';
+            input = input.replace(key, '');
+          }
+        }
+      });
+
+      // 門牌、巷、樓、室等後處理
+      const extraMapping = [
+      { pattern: /(\d+)巷/g, replacement: 'Ln. $1, ' },
+      { pattern: /(\d+)弄/g, replacement: 'Aly. $1, ' },
+      { pattern: /(\d+)號/g, replacement: 'No. $1, ' },   // 號應該在樓之前
+      { pattern: /(\d+)樓/g, replacement: '$1F' },
+      { pattern: /(\d+)室/g, replacement: 'Rm. $1' },
+      { pattern: /東/g, replacement: ' E.' },
+      { pattern: /西/g, replacement: ' W.' },
+      { pattern: /南/g, replacement: ' S.' },
+      { pattern: /北/g, replacement: ' N.' },
+      { pattern: /一/g, replacement: '1st' },
+      { pattern: /二/g, replacement: '2nd' },
+      { pattern: /三/g, replacement: '3rd' },
+      { pattern: /四/g, replacement: '4th' },
+      { pattern: /五/g, replacement: '5th' }
+      ];
+      extraMapping.forEach(entry => {
+        input = input.replace(entry.pattern, entry.replacement);
+      });
+      result += input;
+
+      document.getElementById('englishAddress').value = result || original;
+    }
+  </script>
+
+<header>
+  <nav class="navbar position-absolute top-0 end-0 p-3">
+    <input type="checkbox" id="themeToggle" class="theme-toggle">
+    <label for="themeToggle" class="toggle-icon" title="切換主題"></label>
+  </nav>
+</header>
+  
+</header>
+
+  <div id="project_name">
+    <h2>台灣地址中翻英轉換器</h2>
+  </div>
+  
+  <div class="d-flex flex-column align-items-center mt-5" style="max-width: 600px;">
+    <!-- 中文地址輸入框 -->
+    <div class="w-100 d-flex mb-3">
+      <div class="form-floating flex-grow-1 me-2">
+        <input type="text" class="form-control" id="chineseAddress" placeholder="中文地址">
+        <label for="chineseAddress">中文地址</label>
+      </div>
+    </div>
+  
+    <!-- 英文地址顯示框 -->
+      <div class="form-floating w-100">
+        <input type="text" class="form-control" id="englishAddress" placeholder="英文地址" readonly>
+        <label for="englishAddress">英文地址</label>
+      </div>
+  </div>
+  
+      <div id="label_source" style="text-align: center;">
+        <a>資料來源：中華郵政公司（縣市鄉鎮中英對照檔、中英文街路名稱對照檔、村里文字巷中英對照文字檔）</a>
+      </div>
+</body>
+</html>
