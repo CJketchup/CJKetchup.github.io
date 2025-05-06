@@ -22,8 +22,8 @@
 
   <!--css-->
   <link rel="stylesheet" href="AddTrans_style.css">
-  
-  
+
+
   <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,6 +49,12 @@
   <div class="main-container">
     <div id="project_name">
       <h2>台灣地址中翻英轉換器</h2>
+    </div>
+
+    <div class="container-fluid" id="example_string">
+      <a>範例：台南市東區民族路一段1號</a>
+      <br />
+      <a>翻譯：No. 1, Sec. 1, Minzu Rd, East Dist., Tainan City 701</a>
     </div>
 
     <div class="d-flex flex-column align-items-center mt-5" style="max-width: 600px;">
@@ -80,7 +86,7 @@
     </div>
 
     <div id="label_source" style="text-align: center;">
-      <a>資料來源：中華郵政公司（縣市鄉鎮中英對照檔、中英文街路名稱對照檔、村里文字巷中英對照文字檔）</a>
+      <a>資料來源：中華郵政公司（縣市鄉鎮中英對照檔、中英文街路名稱對照檔、村里文字巷中英對照文字檔）<br />最後更新：113年1月</a>
     </div>
   </div>
 
@@ -143,7 +149,7 @@
         if (cityOnly) {
           const k = Object.keys(countyMapping).find(c => c.startsWith(cityOnly[0]));
           if (k) {
-            countyEN = countyMapping[k].en.split(',').pop().trim();  // 只留 "Tainan City" ★ 新增
+            countyEN = countyMapping[k].en.split(',').pop().trim();  // 只留 "City" ★ 新增
             input = input.replace(cityOnly[0], "");
           }
         }
@@ -164,12 +170,26 @@
       // 門牌必須提早擷取，才能放在最前面
       let laneAlleyEtc = "";   // Ln. / Aly. 等
       let doorNo = "";   // No. XXX (可能帶樓層)
+      let floorNo = "";    // ★新增：如 12F
+      let roomNo = "";    // ★新增：如 Rm. 1
       const extraRules = [
-        { re: /(\d+)巷/g, repl: (m, n) => { laneAlleyEtc += `Ln. ${n}, `; return ""; } },
-        { re: /(\d+)弄/g, repl: (m, n) => { laneAlleyEtc += `Aly. ${n}, `; return ""; } },
         {
-          re: /(\d+)號(\d*)樓?/g, repl: (m, n, f) => {        // 同時支援「109號」、「109號3樓」
-            doorNo = `No. ${n}${f ? `, ${f}F` : ""}`;
+          re: /(\d+)巷/g,
+          repl: (_, n) => { laneAlleyEtc += `Ln. ${n}, `; return ""; }
+        },
+        {
+          re: /(\d+)弄/g,
+          repl: (_, n) => { laneAlleyEtc += `Aly. ${n}, `; return ""; }
+        },
+        {
+          /* ★修改：全新正則 => 同時支援
+             300號 / 300號12樓 / 300號12-1樓 / 300號12之1樓
+          */
+          re: /(\d+)號(?:([\d]+)(?:[-之]([\d]+))?)?樓?/g,   // ★修改
+          repl: (_, no, flr, rm) => {                      // ★修改
+            doorNo = `No. ${no}`;                          // 舊版不變
+            if (flr) floorNo = `${flr}F`;                  // ★新增
+            if (rm) roomNo = `Rm. ${rm}`;                // ★新增
             return "";
           }
         }
@@ -189,21 +209,27 @@
       tailRules.forEach(r => { input = input.replace(r.re, r.repl); });
       input = input.replace(/^\s*,\s*|\s*,\s*$/g, ""); // 去掉首尾逗號
 
-      /* -------- 5. 依照想要的順序組裝 -------- */
+      /* ===== 5. 依照新順序組裝 ===== */
       const pieces = [
-        doorNo,                     // No. 109
-        laneAlleyEtc.trimEnd(),     // Ln. / Aly.（若有）
-        streetEN,                   // Rongyu St.
-        countyEN                    // East Dist., Tainan City
-      ].filter(Boolean)             // 移除空字串
-        .map(p => p.replace(/\s*,\s*$/, "")); // 保險：把意外的結尾逗號砍掉
+        floorNo,                    // ★新增：12F
+        roomNo,                     // ★新增：Rm. 1
+        doorNo,                     // No. 300
+        laneAlleyEtc.trimEnd(),     // Ln. / Aly.
+        streetEN,                   // Sec. 3, Zhongxiao E. Rd.
+        countyEN                    // Da’an Dist., Taipei City
+      ].filter(Boolean)
+        .map(p => p.replace(/\s*,\s*$/, ""));              // 保險：末逗號
 
-      let result = pieces.join(', ');
-      if (zip) result += ` ${zip}`;        // 空白 + 郵遞區號
-      result += ', Taiwan (R.O.C.)';
+      // ---------- Google Maps 用字串 ---------- //
+      let queryStr = pieces.join(', ');          // ★新增：不含「Taiwan」
+      if (zip) queryStr += ` ${zip}`;            // ★新增：郵遞區號保留
+      window.gmapsQuery = queryStr;              // ★新增：存成全域變數
 
+      // ---------- 使用者閱讀用字串 ---------- //
+      let result = `${queryStr}, Taiwan (R.O.C.)`;   // ★修改：用 queryStr 再加國名
       document.getElementById('englishAddress').value = result;
     }
+
     /* --- 共用：Bootstrap Toast 工具函式 ------------------ */
     function showToast(message, variant = 'success') {
       // variant 可帶 'success' | 'danger' | 'warning' | 'info'
@@ -231,13 +257,13 @@
       }
 
       navigator.clipboard.writeText(addr)
-        .then(() => showToast('已複製到剪貼簿！', 'muted'))
+        .then(() => showToast('已複製到剪貼簿！', 'secondary'))
         .catch(() => showToast('複製失敗，請檢查瀏覽器權限', 'secoendary'));
     });
 
     /* --- Open Google Maps --- */
     document.getElementById('mapBtn').addEventListener('click', () => {
-      const addr = document.getElementById('englishAddress').value.trim();
+      const addr = (window.gmapsQuery || '').trim();
       if (!addr) {
         showToast('請先輸入中文地址並完成轉換', 'secondary');
         return;

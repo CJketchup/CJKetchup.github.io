@@ -12,6 +12,19 @@ body {
   box-sizing: border-box;
 
 }
+#example_string a{
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--grad);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 
 /* body {
     background-color: rgb(33, 35, 35);
@@ -73,17 +86,26 @@ input[type="text"].form-control {
   }
 }
 
+/* ===== 變數：預設亮色主題 ===== */
+:root {
+  --bg:   #fff;                       /* 背景 */
+  --fg:   #000;                       /* 一般文字 */
+  --grad: linear-gradient(90deg,      /* 透明字用漸層 */
+          #1d1c1c, #939292, #d7d6d6);
+}
 /* 初始主題：亮色 */
 body {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--bg);
+  color: var(--fg);
 }
 
 /* 暗色主題樣式：當 checkbox 被勾選時 */
 #themeToggle:checked~* body,
 body:has(#themeToggle:checked) {
-  background-color: #121212;
-  color: #faebd7;
+  --bg:   #121212;
+  --fg:   #faebd7;
+  --grad: linear-gradient(90deg,
+          #e2e1e1, #ffffff, #e2e1e1); /* ↖︎ 比背景亮才能看見 */
 }
 
 body:has(#themeToggle:checked) input.form-control {
