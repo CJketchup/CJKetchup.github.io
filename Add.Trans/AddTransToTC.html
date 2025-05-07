@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="html, css, 網頁, JS, javascript">
+    <meta name="description" content="英翻中地址轉換器">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Ketchup" content="Chiao">
+    <title>地址英翻中轉換器</title>
+
+    <!--title小圖示-->
+    <link rel="icon" href="/img/icons/CJF.png">
+    <!-- bootstrap js css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+    <!--css-->
+    <link rel="stylesheet" href="AddTrans_style.css">
+
+
+    <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header>
+        <!-- 左上角：首頁 -->
+        <nav class="navbar position-absolute top-0 start-0 p-3">
+            <a href="/index.html" class="icon-btn home-icon" title="首頁"></a>
+        </nav>
+
+        <!-- 右上角：主題切換 + 中英切換 -->
+        <nav class="navbar position-absolute top-0 end-0 p-3">
+            <!-- 主題 checkbox + 圖示 label -->
+            <input type="checkbox" id="themeToggle" class="theme-toggle" checked>
+            <label for="themeToggle" class="toggle-icon me-3" title="切換主題"></label>
+
+            <!-- 中英切換：獨立 a 連結 -->
+            <a href="AddTrans.html" class="icon-btn lang-icon" title="中英轉換"></a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div id="project_name">
+            <h2>台灣地址英翻中轉換器</h2>
+        </div>
+
+        <div class="container-fluid" id="example_string">
+            <a id ="addr-note">請輸入完整英文地址</a>
+            <br/>
+            <a>範例：No. 1, Sec. 1, Minzu Rd, East Dist., Tainan City 701</a>
+            <br />
+            <a>翻譯：台南市東區民族路一段1號</a>
+        </div>
+
+        <div class="d-flex flex-column align-items-center mt-5" style="max-width: 600px;">
+            <!-- 英文地址輸入框 -->
+            <div class="w-100 d-flex mb-3">
+                <div class="form-floating flex-grow-1 me-2">
+                    <input type="text" class="form-control" id="englishAddress" placeholder="英文地址">
+                    <label for="englishAddress">英文地址</label>
+                </div>
+            </div>
+
+            <!-- 中文地址顯示框 -->
+            <div class="w-100 d-flex mb-3">
+                <div class="form-floating flex-grow-1 me-2">
+                    <input type="text" class="form-control" id="chineseAddress" placeholder="中文地址" readonly>
+                    <label for="chineseAddress">中文地址</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- ★★★ 複製 / Google Maps 兩顆按鈕 ★★★ -->
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <button id="copyBtn" class="btn btn-outline-secondary px-4">
+                複製中文地址
+            </button>
+            <button id="mapBtn" class="btn btn-outline-secondary px-4">
+                Google Maps 搜尋
+            </button>
+        </div>
+
+        <div id="label_source" style="text-align: center;">
+            <a>資料來源：中華郵政公司（縣市鄉鎮中英對照檔、中英文街路名稱對照檔、村里文字巷中英對照文字檔）<br />最後更新：113年1月</a>
+        </div>
+    </div>
+
+    <!-- 放在 <body> 任何位置（通常貼最底） -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
+        <div id="liveToast" class="toast align-items-center text-white bg-success border-0" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div id="toastBody" class="toast-body"> 已複製到剪貼簿！</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let countyMapping = {};
+        let addressMapping = {};
+        let streetMapping = {};
+
+        window.onload = () => {
+            Promise.all([
+                fetch('County_address_mapping_with_zip.json').then(r => r.json()),
+                fetch('address_mapping.json').then(r => r.json()),
+                fetch('street_mapping.json').then(r => r.json())
+            ]).then(([county, address, street]) => {
+                countyMapping = county;
+                addressMapping = address;
+                streetMapping = street;
+                console.log('JSON 讀取完成');
+
+                /* ✅ JSON 完成後再綁事件 */
+                document.getElementById('englishAddress')
+                    .addEventListener('input', convertAddressToChinese);
+            });
+        };
+
+        function normalizeEn(str) {
+            return str
+                .replace(/Taiwan\s*\(R\.O\.C\.\)/i, "")
+                .replace(/,\s*\d{3,5}$/, "")        // 只砍尾端郵遞區號
+                .replace(/\.\s*/g, ".")             // 移掉 Rd. 後面的空格
+                .replace(/\s*,\s*/g, ",")           // 逗號左右去空白
+                .replace(/\s+/g, " ")               // 多空白壓一格
+                .trim();
+        }
+
+        function convertAddressToChinese() {
+            let raw = document.getElementById("englishAddress").value;
+            if (!raw.trim()) return document.getElementById("chineseAddress").value = "";
+
+            let input = normalizeEn(raw);
+
+            /* ---------- 1. 縣市區 ---------- */
+            let countyZh = "";
+            const stripTail = s => s
+                .replace(/\b(City|County)\b/gi, "")   // 去掉 City / County
+                .replace(/\b(Dist\.?|Township|Twp\.?)\b/gi, "") // 也可加上 Dist. / Township
+                .replace(/\s+/g, " ")                 // 再壓空白
+                .trim();
+
+            const inputNoTail = stripTail(input);
+
+            for (const zh of Object.keys(countyMapping)) {
+                const en = stripTail(normalizeEn(countyMapping[zh].en));
+                if (inputNoTail.toLowerCase().includes(en.toLowerCase())) {
+                    countyZh = zh;
+                    // ⚠️ 要從「原始 input」刪掉完整那段才不影響後續
+                    const fullEn = normalizeEn(countyMapping[zh].en);
+                    input = input.replace(new RegExp(fullEn.replace(/\./g, "\\."), "i"), "");
+                    break;
+                }
+            }
+
+            /* ---------- 2. 路名（長字串優先） ---------- */
+            let streetZh = "";
+            const streets = Object.entries(streetMapping)
+                .map(([zh, en]) => [zh, normalizeEn(en)])
+                .sort((a, b) => b[1].length - a[1].length);      // 長的先
+
+            for (const [zh, en] of streets) {
+                const pattern = new RegExp(`\\b${en.replace(/\./g, "\\.")}\\b`, "i");
+                if (pattern.test(input)) {
+                    streetZh = zh;
+                    input = input.replace(pattern, "");
+                    break;
+                }
+            }
+
+            /* ---------- 3. 段 ---------- */
+            let sect = "";
+            input = input.replace(/Sec\.?\s*(\d+)/i, (_, n) => {
+                const cNum = ["", "一", "二", "三", "四", "五", "六", "七", "八", "九"][+n] || n;
+                sect = cNum + "段";
+                return "";
+            });
+
+            /* ---------- 4. 號 / 巷弄 / 樓室 ---------- */
+            input = input.replace(/,/g, " ");
+            let door = "", lane = "", alley = "", floor = "", room = "";
+            input = input.replace(/No\.?\s*(\d+)/i, (_, n) => (door = n + "號", ""));
+            input = input.replace(/Ln\.?\s*(\d+)/i, (_, n) => (lane = n + "巷", ""));
+            input = input.replace(/Aly\.?\s*(\d+)/i, (_, n) => (alley = n + "弄", ""));
+            input = input.replace(/(\d+)F/i, (_, n) => (floor = n + "樓", ""));
+            input = input.replace(/Rm\.?\s*(\d+)/i, (_, n) => (room = n + "室", ""));
+
+            /* ---------- 5. 組回中文 ---------- */
+            const result = countyZh + streetZh + sect + lane + alley + door + floor + room;
+            document.getElementById("chineseAddress").value = result || "（無法解析）";
+        }
+
+        /* --- Copy to clipboard：複製「中文地址」 --- */
+        document.getElementById('copyBtn').addEventListener('click', () => {
+            const addr = document.getElementById('chineseAddress').value.trim();   // ← 換這裡
+            if (!addr) {
+                showToast('請先輸入英文地址並完成轉換', 'secondary');
+                return;
+            }
+
+            navigator.clipboard.writeText(addr)
+                .then(() => showToast('已複製到剪貼簿！', 'secondary'))
+                .catch(() => showToast('複製失敗，請檢查瀏覽器權限', 'danger'));
+        });
+
+        /* --- Open Google Maps：帶「中文地址」搜尋 --- */
+        document.getElementById('mapBtn').addEventListener('click', () => {
+            const addr = document.getElementById('chineseAddress').value.trim();   // ← 換這裡
+            if (!addr) {
+                showToast('請先輸入英文地址並完成轉換', 'secondary');
+                return;
+            }
+
+            // Google Maps 對中文也能直接定位（不加 Taiwan 亦可）
+            const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr)}`;
+            window.open(url, '_blank');
+            showToast('已在新分頁開啟 Google Maps', 'secondary');
+        });
+
+        /* --- 共用：Bootstrap Toast 工具函式 ------------------ */
+        function showToast(message, variant = 'success') {
+            // variant 可帶 'success' | 'danger' | 'warning' | 'info'
+            const toastElement = document.getElementById('liveToast');
+            const toastBody = document.getElementById('toastBody');
+
+            // 更新文字
+            toastBody.textContent = message;
+
+            // 依 variant 換背景色
+            toastElement.classList.remove('bg-success', 'bg-danger', 'bg-warning', 'bg-info');
+            toastElement.classList.add(`bg-${variant}`);
+
+            // 建立 (或取得已存在的) Toast 實例並顯示
+            const toast = bootstrap.Toast.getOrCreateInstance(toastElement);
+            toast.show();
+        }
+    </script>

@@ -12,7 +12,8 @@ body {
   box-sizing: border-box;
 
 }
-#example_string a{
+
+#example_string{
   margin-top: 20px;
   font-size: 15px;
   font-family: "Noto Sans TC", sans-serif;
@@ -32,10 +33,15 @@ body {
 
 #project_name h2 {
   margin-bottom: 20px;
-  font-size: 3.5rem;
+  font-size: 3.7rem;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 700;
   font-style: normal;
+  text-align:center;
+}
+#addr-note{
+  font-size: 25px; 
+  font-weight: 600; 
 }
 
 input,
@@ -88,11 +94,15 @@ input[type="text"].form-control {
 
 /* ===== 變數：預設亮色主題 ===== */
 :root {
-  --bg:   #fff;                       /* 背景 */
-  --fg:   #000;                       /* 一般文字 */
-  --grad: linear-gradient(90deg,      /* 透明字用漸層 */
-          #1d1c1c, #939292, #d7d6d6);
+  --bg: #fff;
+  /* 背景 */
+  --fg: #000;
+  /* 一般文字 */
+  --grad: linear-gradient(90deg,
+      /* 透明字用漸層 */
+      #1d1c1c, #939292, #d7d6d6);
 }
+
 /* 初始主題：亮色 */
 body {
   background-color: var(--bg);
@@ -102,10 +112,11 @@ body {
 /* 暗色主題樣式：當 checkbox 被勾選時 */
 #themeToggle:checked~* body,
 body:has(#themeToggle:checked) {
-  --bg:   #121212;
-  --fg:   #faebd7;
+  --bg: #121212;
+  --fg: #faebd7;
   --grad: linear-gradient(90deg,
-          #e2e1e1, #ffffff, #e2e1e1); /* ↖︎ 比背景亮才能看見 */
+      #e2e1e1, #ffffff, #e2e1e1);
+  /* ↖︎ 比背景亮才能看見 */
 }
 
 body:has(#themeToggle:checked) input.form-control {
@@ -119,37 +130,65 @@ body:has(#themeToggle:checked) input.form-control {
   display: none;
 }
 
+.icon-btn,
 .toggle-icon {
-  width: 32px;
-  height: 32px;
-  background-image: url("/img/moon-stars.png");
+  width: 24px;
+  height: 24px;
   background-size: cover;
   cursor: pointer;
   display: inline-block;
 }
 
+.home-icon {
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  background-image: url("/img/icons/home.png");
+}
+
+/* 當 #themeToggle 被勾選時，換另一張 */
+body:has(#themeToggle:checked) .home-icon {
+  background-image: url("/img/icons/home-night-version.png");
+}
+
+.toggle-icon {
+  background-image: url("/img/icons/brightness-light-version.png");
+}
+
 /* 切換後的圖示 */
 #themeToggle:checked+.toggle-icon {
-  background-image: url("/img/brightness.png");
+  background-image: url("/img/icons/moon-night-version.png");
+}
+
+.lang-icon {
+  background-image: url("/img/icons/language-exchange.png");
+}
+
+/* 切換後的圖示 */
+#themeToggle:checked~.lang-icon {
+  background-image: url("/img/icons/language-exchange-night-version.png");
 }
 
 .toast.toast-brand-yellow {
-  --bs-toast-bg:    #ffb703;
+  --bs-toast-bg: #ffb703;
   --bs-toast-color: #000;
 }
 
 .toast.toast-brand-green {
-  --bs-toast-bg:    #2ca58d;
+  --bs-toast-bg: #2ca58d;
   --bs-toast-color: #fff;
 }
+
 body:has(#themeToggle:checked) .toast.toast-brand-yellow {
-  --bs-toast-bg: #ffd166;   /* 稍微拉亮避免低對比 */
+  --bs-toast-bg: #ffd166;
+  /* 稍微拉亮避免低對比 */
   --bs-toast-color: #000;
 }
 
 .toast-brand-yellow {
   background-color: #ffb703;
-  color: #000;            /* 黃底用黑字才對比 */
+  color: #000;
+  /* 黃底用黑字才對比 */
 }
 
 .toast-brand-green {
@@ -157,7 +196,8 @@ body:has(#themeToggle:checked) .toast.toast-brand-yellow {
   color: #fff;
 }
 
-button,#englishAddress,
+button,
+#englishAddress,
 #chineseAddress,
 .toast,
 .toast .toast-body,

@@ -11,7 +11,7 @@
   <title>地址中翻英轉換器</title>
 
   <!--title小圖示-->
-  <link rel="icon" href="/img/CJF.png">
+  <link rel="icon" href="/img/icons/CJF.png">
   <!-- bootstrap js css-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -40,9 +40,19 @@
 
 
   <header>
+    <!-- 左上角：首頁 -->
+    <nav class="navbar position-absolute top-0 start-0 p-3">
+      <a href="/index.html" class="icon-btn home-icon" title="首頁"></a>
+    </nav>
+
+    <!-- 右上角：主題切換 + 中英切換 -->
     <nav class="navbar position-absolute top-0 end-0 p-3">
+      <!-- 主題 checkbox + 圖示 label -->
       <input type="checkbox" id="themeToggle" class="theme-toggle" checked>
-      <label for="themeToggle" class="toggle-icon" title="切換主題"></label>
+      <label for="themeToggle" class="toggle-icon me-3" title="切換主題"></label>
+
+      <!-- 中英切換：獨立 a 連結 -->
+      <a href="AddTransToTC.html" class="icon-btn lang-icon" title="中英轉換"></a>
     </nav>
   </header>
 
@@ -52,6 +62,8 @@
     </div>
 
     <div class="container-fluid" id="example_string">
+      <a id ="addr-note">請輸入完整中文地址</a>
+      <br />
       <a>範例：台南市東區民族路一段1號</a>
       <br />
       <a>翻譯：No. 1, Sec. 1, Minzu Rd, East Dist., Tainan City 701</a>
