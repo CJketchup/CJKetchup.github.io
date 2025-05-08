@@ -155,7 +155,7 @@
             let countyZh = "";
             const stripTail = s => s
                 .replace(/\b(City|County)\b/gi, "")   // 去掉 City / County
-                .replace(/\b(Dist\.?|Township|Twp\.?)\b/gi, "") // 也可加上 Dist. / Township
+                .replace(/\b(District|Dist\.?|Township|Twp\.?)\b/gi, "") // 也可加上 Dist. / Township
                 .replace(/\s+/g, " ")                 // 再壓空白
                 .trim();
 
