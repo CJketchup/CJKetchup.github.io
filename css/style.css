@@ -291,7 +291,7 @@ p.lead{
 }
 footer{
 	margin-top: 20px;
-	padding: 30px 0px
+	padding: 10px 0px
 }
 #email p{
 	font-family: 'Noto Sans TC', sans-serif;
@@ -504,3 +504,30 @@ footer ul{
 #intro .container {
 	padding: 200px 0;
 }
+
+#subscribe{
+	padding: 2rem 0;            /* 上下邊距縮小 */
+  }
+  
+  #subscribe .row{
+	--bs-gutter-y: .75rem;      /* 壓縮欄距 (原本 1rem) */
+  }
+  
+  #subscribe .form-control{
+	padding: .25rem .75rem;     /* 更扁的輸入框 */
+	font-size: .875rem;
+  }
+  
+  #subscribe h1{               /* 標題更小、行高短 */
+	font-weight: 600;
+  }
+  
+  #subscribe p{
+	font-size: .95rem;
+  }
+  /* 把 .row.g-2 自動加的 row-gap 壓到更小（或 0 都行） */
+  #subscribe .row.g-2 { --bs-gutter-y: .5rem; }
+  
+  /* 避免 <h1> 自帶的大行高撐開 */
+  #subscribe h1 { line-height: 1.2; }
+  
