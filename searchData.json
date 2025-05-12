@@ -1,0 +1,5 @@
+[
+  { "title": "首頁", "url": "/index.html", "content": "網站首頁說明…" },
+  { "title": "關於我們", "url": "/about.html", "content": "團隊介紹…" },
+  { "title": "FAQ", "url": "/faq.html", "content": "付款方式…" }
+]

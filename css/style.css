@@ -1,20 +1,46 @@
 /* #3A3B3B
 #E8CB49 */
 body {
-    background-color: rgb(33, 35, 35); /* 換你想要的顏色 */
+	background-color: #212323;
+	/* 換你想要的顏色 */
 }
+
 @keyframes fadeInUp {
-	0% { opacity: 0; transform: translateY(20px);}
-	100% { opacity: 1; transform: translateY(0);}
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
+
 @keyframes slideInLeft {
-	0% { transform: translateX(-100px); opacity: 0; }
-	100% { transform: translateX(0); opacity: 1; }
+	0% {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
+
 @keyframes zoomIn {
-	0% { transform: scale(0.8); opacity: 0; }
-	100% { transform: scale(1); opacity: 1; }
+	0% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
+
 .press-start-2p-regular {
 	font-family: "Press Start 2P", system-ui;
 	font-weight: 400;
@@ -26,177 +52,238 @@ body {
 	font-weight: 400;
 	font-style: normal;
 }
-  
+
 .stick-regular {
 	font-family: "Stick", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
-  
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Noto Sans TC', sans-serif;
 }
-p,a,span,li,label{
+
+p,
+a,
+span,
+li,
+label {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.09rem;
 	font-weight: 300;
 }
-img{
-	max-width:100%;
+
+img {
+	max-width: 100%;
 }
 
 li {
 	list-style: none;
 }
 
-nav li{
-	    margin: 0 13px;
-		color: #faebd7;
+nav li {
+	margin: 0 13px;
+	color: #faebd7;
 }
+
 .navbar-toggler-icon {
-	filter: invert(1); /* 把原本的黑白色反轉 */
+	filter: invert(1);
+	/* 把原本的黑白色反轉 */
 }
+
 .navbar {
-    background-color: rgb(33, 35, 35) /* 你想要的顏色 */
+	background-color: rgb(33, 35, 35)
+		/* 你想要的顏色 */
 }
+
 .nav-link {
-	color: antiquewhite; /*這裡可以換成你想要的字體顏色 */
+	color: antiquewhite;
+	/*這裡可以換成你想要的字體顏色 */
 	font-size: 1.5rem;
 	font-weight: 400;
 }
 
-#intro .jumbotron{
+#intro .jumbotron {
 	background: url('../pictures/mainbg.png');
 	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height: 70vh;
-    margin-bottom: 0px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 70vh;
+	margin-bottom: 0px;
 }
 
-#intro .jumbotron .container{
-	position:relative;
-    top: 10%;
-    transform: translate(0, -50%);
+#intro .jumbotron .container {
+	position: relative;
+	top: 10%;
+	transform: translate(0, -50%);
 }
-#intro .btn{
+
+#intro .btn {
 	margin-top: 20px;
 }
-#intro h1{
-    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
-	color:antiquewhite;
+
+#intro h1 {
+	font-family: 'Noto Sans TC', sans-serif;
+	/* 或換你想要的字體 */
+	color: antiquewhite;
 	font-size: 6rem;
 	font-weight: 400;
 	animation: fadeInUp 1.2s ease-out forwards;
 }
-#intro h2{
-    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
-	color:antiquewhite;
+
+#intro h2 {
+	font-family: 'Noto Sans TC', sans-serif;
+	/* 或換你想要的字體 */
+	color: antiquewhite;
 	font-size: 8rem;
 	font-weight: 700;
 	animation: slideInLeft 2.4s ease-out forwards;
-	
+
 }
-#intro h3{
-    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
-	color:antiquewhite;
+
+#intro h3 {
+	font-family: 'Noto Sans TC', sans-serif;
+	/* 或換你想要的字體 */
+	color: antiquewhite;
 	font-size: 8rem;
 	font-weight: 700;
 	animation: slideInLeft 4.5s ease-out forwards;
-	
+
 }
 
-#intro p{
-    font-family: 'Noto Sans TC', sans-serif; /* 或換你想要的字體 */
-	color:antiquewhite;
+#intro p {
+	font-family: 'Noto Sans TC', sans-serif;
+	/* 或換你想要的字體 */
+	color: antiquewhite;
 	font-size: 3rem;
 	font-weight: 500;
 	animation: zoomIn 8s ease-out forwards;
 }
+
 #intro a {
-    font-family: "Press Start 2P", system-ui; /* 或換你想要的字體 */
-	color:#faebd7;
+	font-family: "Press Start 2P", system-ui;
+	/* 或換你想要的字體 */
+	color: #faebd7;
 	font-size: 1.5rem;
 }
-.btn{
-	
+
+.btn {
+
 	font-weight: 600;
-	color: #373434; /* 白色 */
-	background-color: #efecf1; /* 主色 violet */
-	border-color: #dccbf7; /* 主色 violet */
-  
+	color: #373434;
+	/* 白色 */
+	background-color: #efecf1;
+	/* 主色 violet */
+	border-color: #dccbf7;
+	/* 主色 violet */
+
 	/* hover 狀態 */
 	transition: all 0.3s;
 }
-.btn:hover{
-	color: #ffffff; /* 維持白色 */
-	background-color: #09070b; /* 比主色暗10% */
-	border-color: #1a191b; /* 比主色暗10% */
+
+.btn:hover {
+	color: #ffffff;
+	/* 維持白色 */
+	background-color: #09070b;
+	/* 比主色暗10% */
+	border-color: #1a191b;
+	/* 比主色暗10% */
 }
+
 .btn:focus {
-	box-shadow: 0 0 0 0.25rem rgba(102, 16, 242, 0.5); /* violet的透明陰影 */
-  }
-.btn:active {
-	color: #ffffff; /* 維持白色 */
-	background-color: #4d0ca3; /* 比主色暗20% */
-	border-color: #4d0ca3; /* 比主色暗20% */
+	box-shadow: 0 0 0 0.25rem rgba(102, 16, 242, 0.5);
+	/* violet的透明陰影 */
 }
-#second{
+
+.btn:active {
+	color: #ffffff;
+	/* 維持白色 */
+	background-color: #4d0ca3;
+	/* 比主色暗20% */
+	border-color: #4d0ca3;
+	/* 比主色暗20% */
+}
+
+#second {
 	padding: 80px 0px;
 }
-#second h3, #latest h3{
+
+#second h3,
+#latest h3 {
 	margin-bottom: 70px;
-	color:antiquewhite;
+	color: antiquewhite;
 	font-size: 4rem;
 	font-family: "Stick", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
+
 .carousel-caption.caption-top {
-    top: 100px; /* 距離圖片上緣 20px，可視情況調整 */
-    bottom: auto;
+	top: 100px;
+	/* 距離圖片上緣 20px，可視情況調整 */
+	bottom: auto;
 }
-.carousel-caption.press-start-2p-regular{
+
+.carousel-caption.press-start-2p-regular {
 	font-family: "Press Start 2P", system-ui;
 	font-weight: 400;
 	font-style: normal;
 }
-#carouselExampleCaptions h5{
+
+#carouselExampleCaptions h5 {
 	margin-bottom: 70px;
-	color:antiquewhite;
+	color: antiquewhite;
 	font-size: 4rem;
 	font-family: "Stick", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
-#carouselExampleCaptions a{
-	font-family: "Press Start 2P", system-ui; /* 或換你想要的字體 */
-	color:antiquewhite;
+
+#carouselExampleCaptions a {
+	font-family: "Press Start 2P", system-ui;
+	/* 或換你想要的字體 */
+	color: antiquewhite;
 	font-size: 1rem;
 	font-weight: 400;
 }
-#subscribe p{
+
+#subscribe p {
 	font-size: 20px;
 	line-height: 20px;
-	color:antiquewhite;
+	color: antiquewhite;
 }
-#subscribe h1{
+
+#subscribe h1 {
 	margin-bottom: 70px;
-	color:antiquewhite;
+	color: antiquewhite;
 	font-size: 3rem;
 	font-family: "Stick", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
-#subscribe h2,h3,h4,h5,h6{
-	color:antiquewhite;
+
+#subscribe h2,
+h3,
+h4,
+h5,
+h6 {
+	color: antiquewhite;
 	font-size: 20px;
 	font-family: "Stick", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
-#subscribe a,span,li,label{
-	color:antiquewhite;
+
+#subscribe a,
+span,
+li,
+label {
+	color: antiquewhite;
 	font-size: 20px;
 	font-family: "Stick", sans-serif;
 	font-weight: 400;
@@ -209,295 +296,356 @@ nav li{
 	width: 100%;
 	object-position: 80%;
 }
-#second h5{
+
+#second h5 {
 	margin-top: 22px;
-    font-size: 16px;
+	font-size: 16px;
 }
+
 #second li {
 	font-family: 'Noto Sans TC', sans-serif;
 	position: relative;
-	color:antiquewhite;
+	color: antiquewhite;
 	text-align: left;
-    padding-left: 20px; 
+	padding-left: 20px;
 }
 
-p{
+p {
 	font-size: 24px;
 	line-height: 32px;
-	color:antiquewhite;
+	color: antiquewhite;
 }
-p.lead{
+
+p.lead {
 	font-size: 2.0rem;
-	color:antiquewhite;
+	color: antiquewhite;
 	line-height: 31px;
 }
+
 #latest {
 	background: rgb(33, 35, 35);
 	padding: 80px 0px;
 }
-#latest .upper{
-	position:relative;
+
+#latest .upper {
+	position: relative;
 }
+
 #latest img {
 	height: 370px;
-  object-fit: cover;
+	object-fit: cover;
 }
-#latest .innertext{
-	position:absolute;
-	bottom:20px;
-	left:30px;
+
+#latest .innertext {
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
 }
-#latest .innertext span{
-	background: rgba(0,0,0,0.3);
+
+#latest .innertext span {
+	background: rgba(0, 0, 0, 0.3);
 	padding: 5px 16px;
 	border-radius: 30px;
 }
-#latest h4{
+
+#latest h4 {
 	font-size: 19px;
-    margin-top: 18px;
+	margin-top: 18px;
 }
-#latest .lower{
-	    padding: 22px;
+
+#latest .lower {
+	padding: 22px;
 
 }
-#latest .col-md-4 .outer{
-	box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+
+#latest .col-md-4 .outer {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
 	padding: 0px;
 	margin: 0 5px;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 }
-#latest .lower h3{
+
+#latest .lower h3 {
 	font-size: 21px;
 	margin-bottom: 12px;
 }
+
 #latest .lower p {
 	margin-bottom: 4px;
 	font-weight: normal;
 }
-#latest a{
-	color:black;
+
+#latest a {
+	color: black;
 }
-#latest a{
-	color:black;
+
+#latest a {
+	color: black;
 	text-decoration: none;
 }
-#latest i{
-	margin-right:5px;
+
+#latest i {
+	margin-right: 5px;
 }
-#email{
+
+#email {
 	padding: 80px 0px
 }
-footer{
+
+footer {
 	margin-top: 20px;
 	padding: 10px 0px
 }
-#email p{
+
+#email p {
 	font-family: 'Noto Sans TC', sans-serif;
 	margin-top: 40px;
-	color:antiquewhite;
+	color: antiquewhite;
 }
-#email h3{
+
+#email h3 {
 	margin-bottom: 70px;
-	color:antiquewhite;
+	color: antiquewhite;
 	font-size: 4rem;
 	font-family: "Stick", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
-.input-group .form-control, 
+
+.input-group .form-control,
 .input-group .btn {
-    height: 50px;
+	height: 50px;
 }
 
 .input-group .form-control {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 .input-group .btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
-footer{
+footer {
 	background-color: #5a5959;
-	border-top: 1px solid rgba(0,0,0,0.09);
+	border-top: 1px solid rgba(0, 0, 0, 0.09);
 }
-footer img{
+
+footer img {
 	margin-bottom: 24px;
 }
-#LogoLine p{
+
+#LogoLine p {
 	font-family: "New Amsterdam", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 18px;
 }
-footer h4{
+
+footer h4 {
 	margin-bottom: 70px;
-	color:antiquewhite;
+	color: antiquewhite;
 	font-size: 2.4rem;
 	font-family: "Stick", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
-footer P{
+
+footer P {
 	font-family: 'Noto Sans TC', sans-serif;
-	color:antiquewhite;
+	color: antiquewhite;
 	text-align: left;
 	font-size: 18px;
 }
-footer ul{
+
+footer ul {
 	list-style: none;
-    padding: 0;
+	padding: 0;
 }
-footer ul a{
-	color:antiquewhite;
+
+footer ul a {
+	color: antiquewhite;
 }
-footer a{
-	color:#E8CB49;
+
+footer a {
+	color: #E8CB49;
 }
-footer a:hover{
-	color:#E8CB49;
+
+footer a:hover {
+	color: #E8CB49;
 }
-footer ul a:hover{
+
+footer ul a:hover {
 	color: #707070;
 	text-decoration: none;
 	opacity: 0.8;
 }
-footer ul li{
+
+footer ul li {
 	margin-bottom: 10px;
 }
-footer ul{
+
+footer ul {
 	float: left;
-    margin-right: 46px;
+	margin-right: 46px;
 }
-#latest .thehead h3{
-    margin-bottom: 7px;
-    font-size: 32px;
+
+#latest .thehead h3 {
+	margin-bottom: 7px;
+	font-size: 32px;
 
 }
-#latest .thehead p{
-    margin-bottom: 80px;
+
+#latest .thehead p {
+	margin-bottom: 80px;
 
 
 }
-#latest .thehead .col-md-4 p{
+
+#latest .thehead .col-md-4 p {
 	margin-bottom: 0px;
-    margin-top: 25px;
+	margin-top: 25px;
 }
-#latest .thehead h3.notag{
+
+#latest .thehead h3.notag {
 	margin-bottom: 88px;
 }
-.card-header .btn,.card-header .btn:hover{
-	background:none!important;
-	color:black;
+
+.card-header .btn,
+.card-header .btn:hover {
+	background: none !important;
+	color: black;
 }
-#intro .jumbotron.jumbotron2{
+
+#intro .jumbotron.jumbotron2 {
 	height: 400px;
 }
-#singlecontent{
+
+#singlecontent {
 	padding: 80 0px;
 }
-.thetag{
+
+.thetag {
 	color: #E8CB49;
-    font-size: 16px;
-    border: 1px solid #E8CB49;
-    padding: 10px 18px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-left: 7px;
+	font-size: 16px;
+	border: 1px solid #E8CB49;
+	padding: 10px 18px;
+	border-radius: 20px;
+	display: inline-block;
+	margin-left: 7px;
 }
-#singlecontent h4{
-	margin-top:50px;
+
+#singlecontent h4 {
+	margin-top: 50px;
 }
-.apply{
+
+.apply {
 	background-color: #f9f9f9;
 	padding: 44px;
 }
-.apply .btn{
+
+.apply .btn {
 	font-size: 16px;
-    margin-top: 31px;
-    width: 100%;
+	margin-top: 31px;
+	width: 100%;
 }
-.applybelow{
-	margin-top:80px;
+
+.applybelow {
+	margin-top: 80px;
 	text-align: center;
 }
-.btn2{
-    color: #707070;
-    border: 1px solid #707070;
-    padding: 10px 24px;
-    border-radius: 20px;
-    margin-top: 3px;
-    display: inline-block;
+
+.btn2 {
+	color: #707070;
+	border: 1px solid #707070;
+	padding: 10px 24px;
+	border-radius: 20px;
+	margin-top: 3px;
+	display: inline-block;
 }
-.btn2:hover{
+
+.btn2:hover {
 	text-decoration: none;
 	opacity: 0.8;
 	color: #707070;
 }
-#intro .contact{
+
+#intro .contact {
 	height: auto;
-    padding: 0px;
+	padding: 0px;
 }
-#intro .contact .col-md-4{
+
+#intro .contact .col-md-4 {
 	height: 400px;
-    background: rgba(0,0,0,0.5);
-    padding: 66px;
-    text-align: center;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 66px;
+	text-align: center;
 }
-#intro .contact .col-md-4 h1{
-	color:white;
+
+#intro .contact .col-md-4 h1 {
+	color: white;
 }
-#intro .contact .col-md-4 p{
-	color:white;
+
+#intro .contact .col-md-4 p {
+	color: white;
 }
+
 #intro .contact .col-md-4 hr {
-    color: white;
-    border-top: 2px solid #E8CB49;
-    width: 87px;
-    margin-top: 24px;
-    margin-bottom: 26px;
+	color: white;
+	border-top: 2px solid #E8CB49;
+	width: 87px;
+	margin-top: 24px;
+	margin-bottom: 26px;
 }
-.cinner{
-	position:relative;
-    top: 50%;
-    transform: translate(0, -50%);
+
+.cinner {
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
 }
-#contactcontent{
+
+#contactcontent {
 	padding: 80px 0px;
 }
-#contactcontent h3{
+
+#contactcontent h3 {
 	margin-bottom: 40px;
 }
-#contactcontent a{
-	color:#E8CB49;
+
+#contactcontent a {
+	color: #E8CB49;
 }
-#contactcontent a.btn{
-	color:white;
+
+#contactcontent a.btn {
+	color: white;
 }
-#contactcontent textarea{
-	height:200px;
+
+#contactcontent textarea {
+	height: 200px;
 	margin-bottom: 10px;
 }
-#contactcontent i{
-	display:inline-block;
+
+#contactcontent i {
+	display: inline-block;
 	margin-right: 4px;
 }
 
 @media only screen and (max-width: 768px) {
 	#second h5 {
-	    margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
-	#latest .col-md-4{
+
+	#latest .col-md-4 {
 		margin-bottom: 60px;
 	}
+
 	footer h4 {
-	    font-size: 17px;
-	    margin-top: 30px;
-	    margin-bottom: 18px;
+		font-size: 17px;
+		margin-top: 30px;
+		margin-bottom: 18px;
 	}
 }
 
@@ -505,29 +653,81 @@ footer ul{
 	padding: 200px 0;
 }
 
-#subscribe{
-	padding: 2rem 0;            /* 上下邊距縮小 */
-  }
-  
-  #subscribe .row{
-	--bs-gutter-y: .75rem;      /* 壓縮欄距 (原本 1rem) */
-  }
-  
-  #subscribe .form-control{
-	padding: .25rem .75rem;     /* 更扁的輸入框 */
+#subscribe {
+	padding: 2rem 0;
+	/* 上下邊距縮小 */
+}
+
+#subscribe .row {
+	--bs-gutter-y: .75rem;
+	/* 壓縮欄距 (原本 1rem) */
+}
+
+#subscribe .form-control {
+	padding: .25rem .75rem;
+	/* 更扁的輸入框 */
 	font-size: .875rem;
-  }
-  
-  #subscribe h1{               /* 標題更小、行高短 */
+}
+
+#subscribe h1 {
+	/* 標題更小、行高短 */
 	font-weight: 600;
-  }
-  
-  #subscribe p{
+}
+
+#subscribe p {
 	font-size: .95rem;
-  }
-  /* 把 .row.g-2 自動加的 row-gap 壓到更小（或 0 都行） */
-  #subscribe .row.g-2 { --bs-gutter-y: .5rem; }
-  
-  /* 避免 <h1> 自帶的大行高撐開 */
-  #subscribe h1 { line-height: 1.2; }
-  
+}
+
+/* 把 .row.g-2 自動加的 row-gap 壓到更小（或 0 都行） */
+#subscribe .row.g-2 {
+	--bs-gutter-y: .5rem;
+}
+
+/* 避免 <h1> 自帶的大行高撐開 */
+#subscribe h1 {
+	line-height: 1.2;
+}
+
+.gsc-search-button {
+	margin-left: -8px !important;
+	margin-top: -1px !important;
+	height: 2.4rem;
+}
+
+input.gsc-search-button {
+	padding: 6px 12px !important;
+	border-radius: 0.5rem !important;
+	background-color: #198754 !important;
+	/* Bootstrap success 綠 */
+	color: rgb(33, 35, 35) !important;
+	border: none !important;
+}
+
+#Select_Title {
+	color: antiquewhite;
+	font-weight: 700;
+}
+
+.custom-tool-list .list-group-item {
+	font-family: "微軟正黑體", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(36, 36, 33);
+}
+
+#BMI_resultBox,
+#bmiValue,
+#bmiStatus,
+#tdeeResult,
+#tdeeValue {
+	font-family: "微軟正黑體", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(36, 36, 33);
+}
+
+#TDEE_explain P{
+	font-family: "Microsoft JhengHei", sans-serif;
+	font-size: 14px;
+	margin-top: 40px;
+}

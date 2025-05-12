@@ -17,7 +17,7 @@
   <!--css-->
   <link rel="stylesheet" href="css/style.css">
   <!--title小圖示-->
-  <link rel="icon"  href="img/icons/CJF.png">
+  <link rel="icon" href="img/icons/CJF.png">
   <!--icon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
@@ -35,9 +35,9 @@
   <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid" >
+        <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="img/icons/CJF-removebg-preview.png" alt="logo"
-            width="145" ><!--設定LOGO圖片位置--></a> 
+              width="145"><!--設定LOGO圖片位置--></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -51,29 +51,44 @@
               <li class="nav-item">
                 <a class="nav-link" href="second.html" target="_blank">最新消息</a> <!--設定連結-->
               </li>
-              
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    作品介紹
+                  aria-expanded="false">
+                  作品介紹
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="Add.Trans/AddTrans.html">郵件地址中翻英</a></li>
                   <li><a class="dropdown-item" href="Tools.html">實用小工具</a></li>
                   <li><a class="dropdown-item" href="#">作品</a></li>
-                  
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="Tranport_System/Trans_index.html">交運小幫手</a></li> 
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="Tranport_System/Trans_index.html">交運小幫手</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">聯絡我們</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <script>
+              window.__gcse = {
+                parsetags: 'onload',
+                callback: function () {
+                  var input = document.querySelector('input.gsc-input');
+                  if (input) input.placeholder = "Google搜尋...";
+                },
+              };
+            </script>
+
+            <script async src="https://cse.google.com/cse.js?cx=52ac00808adc84311">
+            </script>
+            <div class="gcse-searchbox-only"></div>
+            <!-- <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> -->
           </div>
         </div>
       </nav>
@@ -112,9 +127,12 @@
   <section class="container mb-5">
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -129,7 +147,7 @@
         <div class="carousel-item">
           <div onclick="window.location.href='https://www.formula1.com/en/racing/2025/belgium'">
             <img src="img/Eau Rouge.jpg" class="d-block w-100" alt="">
-            <div class="carousel-caption caption-top d-none d-md-block">            
+            <div class="carousel-caption caption-top d-none d-md-block">
               <h5>手刀報名</h5>
             </div>
             <div class="carousel-caption d-none d-md-block">
@@ -149,11 +167,13 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -161,22 +181,20 @@
 
   </section>
 
-  <div class="container mb-4" >
+  <div class="container mb-4">
     <div class="row">
-    <div class="col-md-6">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/KkkRXSZX0lg?si=iNM5jAuaeCSud5Bz" 
-      title="YouTube video player" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" 
-      allowfullscreen></iframe>
-    </div>
-    <div class="col-md-6">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/iBnFUUUwC04?si=oSLlVF_XKX7zAkJr" 
-      title="YouTube video player" frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      referrerpolicy="strict-origin-when-cross-origin" 
-      allowfullscreen></iframe>
-    </div>
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KkkRXSZX0lg?si=iNM5jAuaeCSud5Bz"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iBnFUUUwC04?si=oSLlVF_XKX7zAkJr"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
@@ -256,7 +274,7 @@
     </div>
   </section>
 
-  
+
 
   <footer>
     <div class="container mg-5">
@@ -292,8 +310,8 @@
             <a href="index.html" class="me-3 fs-4" style="color: #faebd7;"><i class="fab fa-instagram"></i></a>
             <a href="index.html" class="me-3 fs-4" style="color: #faebd7;"><i class="fab fa-line"></i></a>
           </div>
+        </div>
       </div>
-    </div>
   </footer>
 
   </html>

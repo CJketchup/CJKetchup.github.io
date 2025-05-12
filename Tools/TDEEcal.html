@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="html, css, 網頁, JS, javascript">
+    <meta name="description" content="小工具">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Ketchup" content="Chiao">
+    <title>BMI計算機</title>
+
+    <!-- bootstrap js css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!--css-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--title小圖示-->
+    <link rel="icon" href="/img/icons/CJF.png">
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>TDEE (每日總消耗熱量) 計算機</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="/img/icons/CJF-removebg-preview.png" alt="logo"
+                            width="145"><!--設定LOGO圖片位置--></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/second.html" target="_blank">最新消息</a> <!--設定連結-->
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="Collections.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    作品介紹
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Add.Trans/AddTrans.html">郵件地址中翻英</a></li>
+                                    <li><a class="dropdown-item" href="/Tools.html">實用小工具</a></li>
+                                    <li><a class="dropdown-item" href="#">作品</a></li>
+
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="Tranport_System/Trans_index.html">交運小幫手</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mailto:jchiao6900.gmail.com" class="nav-link">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <script>
+                            window.__gcse = {
+                                parsetags: 'onload',
+                                callback: function () {
+                                    var input = document.querySelector('input.gsc-input');
+                                    if (input) input.placeholder = "Google搜尋...";
+                                },
+                            };
+                        </script>
+
+                        <script async src="https://cse.google.com/cse.js?cx=52ac00808adc84311">
+                        </script>
+                        <div class="gcse-searchbox-only"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="TDEE_Cal" class="py-5">
+        <div class="container" style="max-width: 500px;">
+            <div class="text-center mb-4" id="Select_Title">
+                <h1>TDEE計算機</h1>
+            </div>
+
+
+            <!-- 性別 -->
+            <div class="mb-3">
+                <label class="form-label text-light">性別</label>
+                <select class="form-select" id="gender">
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                </select>
+            </div>
+
+            <!-- 年齡 -->
+            <div class="mb-3">
+                <label class="form-label text-light">年齡</label>
+                <input type="number" class="form-control" id="age" placeholder="例如：25">
+            </div>
+
+            <!-- 身高 -->
+            <div class="mb-3">
+                <label class="form-label text-light">身高（公分）</label>
+                <input type="number" class="form-control" id="height" placeholder="例如：170">
+            </div>
+
+            <!-- 體重 -->
+            <div class="mb-3">
+                <label class="form-label text-light">體重（公斤）</label>
+                <input type="number" class="form-control" id="weight" placeholder="例如：60">
+            </div>
+
+            <!-- 活動量 -->
+            <div class="mb-3">
+                <label class="form-label text-light">每日活動量</label>
+                <select class="form-select" id="activity">
+                    <option value="1.2">久坐：幾乎不運動</option>
+                    <option value="1.375">輕度活動：每週輕量運動1~3天</option>
+                    <option value="1.55">中度活動：每週中強度運動3~5天</option>
+                    <option value="1.725">高度活動：每週高強度運動6~7天</option>
+                    <option value="1.9">極高活動：每天劇烈運動或體力勞動</option>
+                </select>
+            </div>
+
+            <!-- 按鈕 -->
+            <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-warning" onclick="calculateTDEE()">計算 TDEE</button>
+            </div>
+
+            <!-- 結果 -->
+            <div id="tdeeResult" class="alert alert-light d-none">
+                <strong>您的每日總消耗熱量（TDEE）：</strong>
+                <span id="tdeeValue" class="fw-bold"></span> kcal
+            </div>
+
+
+            <div id="TDEE_explain">
+                <p>TDEE (每日總消耗熱量) = BMR (基礎代謝率) × 活動係數 <br />
+                    BMR 使用 Mifflin-St Jeor 公式：<br />
+
+                    男：BMR = 10×體重 + 6.25×身高 − 5×年齡 + 5<br />
+
+                    女：BMR = 10×體重 + 6.25×身高 − 5×年齡 − 161
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function calculateTDEE() {
+            const gender = document.getElementById('gender').value;
+            const age = parseFloat(document.getElementById('age').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const activity = parseFloat(document.getElementById('activity').value);
+            const resultBox = document.getElementById('tdeeResult');
+            const tdeeValue = document.getElementById('tdeeValue');
+
+            // 基本輸入檢查
+            if (!age || !height || !weight || !activity) {
+                resultBox.classList.remove('alert-success');
+                resultBox.classList.add('alert-danger');
+                tdeeValue.textContent = '請輸入完整且正確的資料';
+                resultBox.classList.remove('d-none');
+                return;
+            }
+
+            // 計算 BMR
+            let bmr = 0;
+            if (gender === 'male') {
+                bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+            } else {
+                bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+            }
+
+            const tdee = Math.round(bmr * activity);
+            tdeeValue.textContent = tdee;
+            resultBox.classList.remove('d-none');
+            resultBox.classList.remove('alert-danger');
+            resultBox.classList.add('alert-success');
+        }
+    </script>
+
+
+</body>
