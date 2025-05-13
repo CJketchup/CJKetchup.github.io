@@ -2,70 +2,314 @@
 <html lang="zh-TW">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="html, css, 網頁, JS, javascript">
-    <meta name="description" content="輔助交運系統">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Ketchup" content="Chiao">
-    <title>西線南下</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="html, css, 網頁, JS, javascript">
+  <meta name="description" content="輔助交運系統">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Ketchup" content="Chiao">
+  <title>西線南下</title>
 
-    <!--title小圖示-->
-    <link rel="icon" href="/img/icons/CJF.png">
-    <!-- bootstrap js css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-
-
-    <!--css-->
-    <link rel="stylesheet" href="Tran_style.css">
+  <!--title小圖示-->
+  <link rel="icon" href="/img/icons/CJF.png">
+  <!-- bootstrap js css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!-- script -->
+  <script src="operation.js" defer></script>
 
 
-    <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
+  <!--css-->
+  <link rel="stylesheet" href="Tran_style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <!-- 左上角：首頁 -->
-        <nav class="navbar position-absolute top-0 start-0 p-3 d-flex gap-3">
-            <a href="/index.html" class="icon-btn home-icon" title="首頁"></a>
-            <a href="Trans_index.html" class="icon-btn sub-home-icon" title="交運工具首頁"></a>
-        </nav>
+  <header>
+    <div class="container">
+      <!-- 左上角：首頁 -->
+      <nav class="navbar position-absolute top-0 start-0 p-3 d-flex gap-3">
+        <a href="/index.html" class="icon-btn home-icon" title="首頁"></a>
+        <a href="Trans_index.html" class="icon-btn sub-home-icon" title="交運工具首頁"></a>
+      </nav>
 
-        <div class="dropdown position-absolute top-0 end-0 p-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              分區列表
+      <div class="dropdown position-absolute top-0 end-0 p-3" style="margin-top: -6px; margin-right: -6px;">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownRoute" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          分區列表
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownRoute">
+          <li><a class="dropdown-item" href="Trans_WestLine.html">西線南下</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="Trans_Nouth_Coast.html">北部近郊</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="Trans_EastLine.html">東線沿岸</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="Trans_International.html">國際航郵</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-container ">
+    <div id="project_name">
+      <h2>交運小幫手</h2>
+    </div>
+    <div class="container px-0">
+      <div class="row">
+        <div class="col text-start">
+          <button type="button" class="btn btn-outline-secondary btn-md" style="margin-left: -1px">狀態更新</button>
+        </div>
+        <div class="col text-end">
+          <div class="btn-group dropend">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false" style="margin-right: -1px">
+              工作號碼
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="Trans_WestLine.html">西線南下</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="Trans_Nouth_Coast.html">北部近郊</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="Trans_EastLine.html">東線沿岸</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="Trans_International.html">國際航郵</a></li>
+            <ul class="dropdown-menu pe-1 ps-1">
+              <li><a class="dropdown-item" href="#">42號</a></li>
+              <li><a class="dropdown-item" href="#">43號</a></li>
+              <li><a class="dropdown-item" href="#">46號</a></li>
+              <li><a class="dropdown-item" href="#">46號</a></li>
             </ul>
           </div>
-    </header>
+        </div>
+      </div>
+
+    </div>
 
     <div class="main-container">
-        <div id="project_name">
-          <h1>交運小幫手</h1>
+      <table class="table" id="main-screen">
+        <thead>
+          <tr class="table-secondary">
+            <th scope="col">#車次</th>
+            <th scope="col">乘載量</th>
+            <th scope="col">乘載量</th>
+            <th scope="col">發車狀態</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-secondary">
+            <th class="table-secondary" scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>@social</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <section id="controllers" class="container my-4">
+    <div class="d-flex flex-nowrap justify-content-center gap-4 text-center">
+
+      <div class="carousel-card bg-dark p-3">
+
+        <!-- === 影像輪播 === -->
+        <div id="carousel_1" class="carousel slide mb-3" >
+          <div class="carousel-inner rounded-3 overflow-hidden">
+            <!-- ↓ 每張 slide 標 data-index，index 必須從 0 開始遞增 -->
+            <div class="carousel-item active" data-index="0">
+              <img src="/img/post_driver.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" data-index="1">
+              <img src="/img/signed_driver.jpg" class="d-block w-100" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel_1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
 
+        <!-- A 地發車 -->
+        <div class="mb-2 text-white-50">A 地發車</div>
+
+        <!-- ① flex-nowrap 保證橫排；② counter-row 方便附加寬度 -->
+        <div class="d-flex flex-nowrap justify-content-center align-items-center counter-row mb-3 input-group group-a">
+
+          <!-- ＋按鈕 -->
+          <button class="btn btn-outline-light btn-sm px-2 plus">＋</button>
+
+          <!-- 數字框：flex-grow-0 + 指定寬度 -->
+          <input type="text" class="form-control form-control-sm text-center flex-grow-0 mx-1" style="width:4rem"
+            value="0" readonly>
+
+          <!-- －按鈕 -->
+          <button class="btn btn-outline-light btn-sm px-2 minus">−</button>
+        </div>
+
+       <!-- B 地發車 -->
+        <div class="mb-2 text-white-50">B 地發車</div>
+
+        <!-- ① flex-nowrap 保證橫排；② counter-row 方便附加寬度 -->
+        <div class="d-flex flex-nowrap justify-content-center align-items-center counter-row mb-3 input-group group-b">
+
+          <!-- ＋按鈕 -->
+          <button class="btn btn-outline-light btn-sm px-2 plus">＋</button>
+
+          <!-- 數字框：flex-grow-0 + 指定寬度 -->
+          <input type="text" class="form-control form-control-sm text-center flex-grow-0 mx-1" style="width:4rem"
+            value="0" readonly>
+
+          <!-- －按鈕 -->
+          <button class="btn btn-outline-light btn-sm px-2 minus">−</button>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-success flex-grow-1">確認上車</button>
+          <button class="btn btn-primary flex-grow-1">結束出發</button>
+        </div>
+      </div>
+
+
+
+      <!-- 🚚 車卡片 2 -->
+      <div class="carousel-card bg-dark rounded-3 p-3">
+        <div id="carousel_2" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-3 overflow-hidden">
+            <div class="carousel-item active">
+              <img src="/img/post_driver.jpg" class="d-block w-100 h-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/signed_driver.jpg" class="d-block w-100 h-100" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel_2" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <p class="text-center text-white-50">提示 ‧ 總車數：<span class="fw-bold">18</span> 車</p>
+
+        <!-- A 地 -->
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="text-white-50">A 地發車</span>
+          <div class="input-group w-auto">
+            <button class="btn btn-outline-light btn-sm px-2 minus" data-target="a-2">-</button>
+            <input id="a-2" class="form-control form-control-sm text-center" type="text" value="0" readonly>
+            <button class="btn btn-outline-light btn-sm px-2 plus" data-target="a-2">＋</button>
+          </div>
+        </div>
+
+        <!-- B 地 -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-white-50">B 地發車</span>
+          <div class="input-group w-auto">
+            <button class="btn btn-outline-light btn-sm px-2 minus" data-target="b-2">-</button>
+            <input id="b-2" class="form-control form-control-sm text-center" type="text" value="0" readonly>
+            <button class="btn btn-outline-light btn-sm px-2 plus" data-target="b-2">＋</button>
+          </div>
+        </div>
+
+        <div class="d-flex gap-2">
+          <button class="btn btn-success flex-grow-1">確認上車</button>
+          <button class="btn btn-primary flex-grow-1">結束出發</button>
+        </div>
+      </div>
+
+
+      <!-- 🚚 車卡片 3 -->
+      <div class="carousel-card bg-dark rounded-3 p-3">
+        <div id="carousel_3" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-3 overflow-hidden">
+            <div class="carousel-item active">
+              <img src="/img/post_driver.jpg" class="d-block w-100 h-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/signed_driver.jpg" class="d-block w-100 h-100" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel_3" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+        <p class="text-center text-white-50">提示 ‧ 總車數：<span class="fw-bold">18</span> 車</p>
+
+        <!-- A 地 -->
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="text-white-50">A 地發車</span>
+          <div class="input-group w-auto">
+            <button class="btn btn-outline-light btn-sm px-2 minus" data-target="a-3">-</button>
+            <input id="a-3" class="form-control form-control-sm text-center" type="text" value="0" readonly>
+            <button class="btn btn-outline-light btn-sm px-2 plus" data-target="a-3">＋</button>
+          </div>
+        </div>
+
+        <!-- B 地 -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-white-50">B 地發車</span>
+          <div class="input-group w-auto">
+            <button class="btn btn-outline-light btn-sm px-2 minus" data-target="b-3">-</button>
+            <input id="b-3" class="form-control form-control-sm text-center" type="text" value="0" readonly>
+            <button class="btn btn-outline-light btn-sm px-2 plus" data-target="b-3">＋</button>
+          </div>
+        </div>
+
+        <div class="d-flex gap-2">
+          <button class="btn btn-success flex-grow-1">確認上車</button>
+          <button class="btn btn-primary flex-grow-1">結束出發</button>
+        </div>
+      </div>
 
 
     </div>
-    
+  </section>
+
+  <script>
+
+    document.querySelectorAll('.plus, .minus').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const id = e.target.dataset.target;         // a-1 / b-1 ...
+        const input = document.getElementById(id);
+        let val = parseInt(input.value, 10);
+        val += e.target.classList.contains('plus') ? 1 : -1;
+        if (val < 0) val = 0;
+        input.value = val;
+        // ➜ 這裡可同步更新總車數 / 其他邏輯
+      });
+    });
+
+
+  </script>
+
 </body>

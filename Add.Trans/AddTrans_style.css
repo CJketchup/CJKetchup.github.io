@@ -14,8 +14,8 @@ body {
 }
 
 #example_string{
-  margin-top: 20px;
-  font-size: 15px;
+  margin-top: 1.25rem;
+  font-size: 0.9375rem;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -32,7 +32,7 @@ body {
     }*/
 
 #project_name h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-size: 3.7rem;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 700;
@@ -40,15 +40,15 @@ body {
   text-align:center;
 }
 #addr-note{
-  font-size: 25px; 
+  font-size: 1.5625rem; 
   font-weight: 600; 
 }
 
 input,
 button {
-  font-size: 16px;
-  padding: 6px 10px;
-  margin: 5px;
+  font-size: 1.0rem;
+  padding: 0.375rem 0.625rem;
+  margin: 0.3125rem;
 }
 
 #englishAddress {
@@ -57,35 +57,35 @@ button {
 }
 
 input[type="text"] {
-  width: 400px;
-  height: 30px;
-  padding: 20px 12px;
-  font-size: 14px;
+  width: 25.0rem;
+  height: 1.875rem;
+  padding: 1.25rem 0.75rem;
+  font-size: 0.875rem;
   box-sizing: border-box;
 }
 
 #label_source {
   font-family: "Microsoft JhengHei", sans-serif;
-  font-size: 12px;
-  margin-top: 40px;
+  font-size: 0.75rem;
+  margin-top: 2.5rem;
 }
 
 /* 以下為測試 */
-/* 主內容區塊最大寬度為 600px，自動縮放 */
+/* 主內容區塊最大寬度為 37.5rem，自動縮放 */
 .main-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 /* 自訂輸入框樣式（響應式） */
 input[type="text"].form-control {
   width: 100%;
-  padding: 16px 12px;
-  font-size: 14px;
+  padding: 1.0rem 0.75rem;
+  font-size: 0.875rem;
 }
 
 /* 手機時文字置中 */
-@media (max-width: 576px) {
+@media (max-width: 36.0rem) {
   #project_name h2 {
     text-align: center;
     font-size: 2rem;
@@ -122,7 +122,7 @@ body:has(#themeToggle:checked) {
 body:has(#themeToggle:checked) input.form-control {
   background-color: #333;
   color: #faebd7;
-  border: 1px solid #555;
+  border: 0.0625rem solid #555;
 }
 
 /* 切換器樣式 */
@@ -132,16 +132,16 @@ body:has(#themeToggle:checked) input.form-control {
 
 .icon-btn,
 .toggle-icon {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-size: cover;
   cursor: pointer;
   display: inline-block;
 }
 
 .home-icon {
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   background-size: cover;
   background-image: url("/img/icons/home.png");
 }
@@ -204,5 +204,5 @@ button,
 .btn {
   font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
 }

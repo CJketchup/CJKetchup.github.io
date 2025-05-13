@@ -1,3 +1,6 @@
+header {
+  min-height: 4.375rem;
+}
 body {
     background-color: rgb(33, 35, 35);
     /* 黑色背景 */
@@ -20,41 +23,42 @@ body {
 
 input,
 button {
-    font-size: 16px;
-    padding: 6px 10px;
-    margin: 5px;
+    font-size: 1.0rem;
+    padding: 0.375rem 0.625rem;
+    margin: 0.3125rem;
 }
 
 input[type="text"] {
-    width: 400px;
-    height: 30px;
-    padding: 20px 12px;
-    font-size: 14px;
+    width: 25.0rem;
+    height: 1.875rem;
+    padding: 1.25rem 0.75rem;
+    font-size: 0.875rem;
     box-sizing: border-box;
 }
 
 
-/* 主內容區塊最大寬度為 600px，自動縮放 */
+/* 主內容區塊最大寬度為 37.5rem，自動縮放 */
 .main-container {
     width: 100%;
-    max-width: 600px;
-    text-align:center;
-   
+    max-width: 37.5rem;
+    text-align: center;
+
 }
+
 #project_name h2 {
-    text-align: top , center;
+    text-align: top, center;
     font-size: 3.5rem;
     font-weight: 700;
 }
 
 #project_name h1 {
-    text-align: top , center;
+    text-align: top, center;
     font-size: 6rem;
     font-weight: 700;
 }
 
 /* 手機時文字置中 */
-@media (max-width: 576px) {
+@media (max-width: 36.0rem) {
     #project_name h2 {
         text-align: center;
         font-size: 2rem;
@@ -62,7 +66,7 @@ input[type="text"] {
 }
 
 /* 手機時文字置中 */
-@media (max-width: 576px) {
+@media (max-width: 36.0rem) {
     #project_name h1 {
         text-align: center;
         font-size: 4rem;
@@ -72,20 +76,91 @@ input[type="text"] {
 /* 自訂輸入框樣式（響應式） */
 input[type="text"].form-control {
     width: 100%;
-    padding: 16px 12px;
-    font-size: 14px;
+    padding: 1.0rem 0.75rem;
+    font-size: 0.875rem;
 }
 
 .home-icon {
-    width: 22px;
-    height: 22px;
+    width: 1.5rem;
+    height: 1.5rem;
     background-size: cover;
     background-image: url("/img/icons/home-night-version.png");
 }
 
 .sub-home-icon {
-    width: 24px;
-    height: 24px;
+    width: 1.625rem;
+    height: 1.625rem;
     background-size: cover;
     background-image: url("/img/icons/shipping-fast-night-version.png");
 }
+
+.dropdown-menu {
+    min-width: auto !important;
+    width: auto !important;
+}
+
+.dropdown-item {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.carousel-inner {
+    min-height: 12.5rem;
+    /* 或你希望的高度 */
+    background-color: #333;
+    /* 可加底色看得出範圍 */
+}
+
+.carousel-box {
+    width: 12.5rem;
+    height: auto;
+    background-color: #8d8d8d;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.5rem rgba(65, 60, 53, 0.3);
+  }
+  
+  .carousel-inner {
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 填滿正方形區域並裁切多餘部分 */
+    border-radius: 0.375rem;
+  }
+  .carousel-card {
+    flex: 0 0 auto;              /* 不允許縮放，保持固定寬度 */
+    width: 15.0rem;
+    min-height: 28.75rem;
+    background-color: #636262;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+    border-radius: 0.375rem;
+  }
+  
+
+  @media (max-width: 37.5rem) {
+    .carousel-box {
+      width: 9.375rem;
+      height: 3.125rem;
+    }
+  }
+
+
+  
+
