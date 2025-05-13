@@ -22,19 +22,19 @@
   <!--icon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!--字型--> <!--Google Font 免費字型 挑選 get font code-->
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <title>BMI計算機</title>
+  
 
 </head>
 
 <body>
- <header>
+  <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -95,71 +95,71 @@
   </header>
 
   <section id="BMI_count" class="py-5">
-  <div class="container" style="max-width: 500px;">
-    <div class="text-center mb-4" id="Select_Title">
-      <h1>BMI計算機</h1>
+    <div class="container" style="max-width: 500px;">
+      <div class="text-center mb-4" id="Select_Title">
+        <h1>BMI計算機</h1>
+      </div>
+
+      <!-- 表單輸入 -->
+      <div class="mb-3">
+        <label for="height" class="form-label text-light">身高（公分）</label>
+        <input type="number" class="form-control" id="height" placeholder="例如：170">
+      </div>
+      <div class="mb-3">
+        <label for="weight" class="form-label text-light">體重（公斤）</label>
+        <input type="number" class="form-control" id="weight" placeholder="例如：60">
+      </div>
+
+      <!-- 按鈕 -->
+      <div class="d-grid gap-2 mb-3">
+        <button class="btn btn-success" onclick="calculateBMI()">計算 BMI</button>
+      </div>
+
+      <!-- 結果輸出 -->
+      <div id="BMI_resultBox" class="alert alert-secondary text-dark d-none">
+        <strong>您的 BMI 是：</strong> <span id="bmiValue"></span><br>
+        <span id="bmiStatus"></span>
+      </div>
     </div>
+  </section>
 
-    <!-- 表單輸入 -->
-    <div class="mb-3">
-      <label for="height" class="form-label text-light">身高（公分）</label>
-      <input type="number" class="form-control" id="height" placeholder="例如：170">
-    </div>
-    <div class="mb-3">
-      <label for="weight" class="form-label text-light">體重（公斤）</label>
-      <input type="number" class="form-control" id="weight" placeholder="例如：60">
-    </div>
+  <script>
+    function calculateBMI() {
+      const h = parseFloat(document.getElementById('height').value);
+      const w = parseFloat(document.getElementById('weight').value);
+      const resultBox = document.getElementById('BMI_resultBox');
+      const bmiVal = document.getElementById('bmiValue');
+      const bmiStatus = document.getElementById('bmiStatus');
 
-    <!-- 按鈕 -->
-    <div class="d-grid gap-2 mb-3">
-      <button class="btn btn-success" onclick="calculateBMI()">計算 BMI</button>
-    </div>
+      if (!h || !w || h <= 0 || w <= 0) {
+        resultBox.classList.remove('d-none');
+        bmiVal.textContent = '請輸入正確的身高與體重';
+        bmiStatus.textContent = '';
+        return;
+      }
 
-    <!-- 結果輸出 -->
-    <div id="BMI_resultBox" class="alert alert-secondary text-dark d-none">
-      <strong>您的 BMI 是：</strong> <span id="bmiValue"></span><br>
-      <span id="bmiStatus"></span>
-    </div>
-  </div>
-</section>
+      const bmi = (w / ((h / 100) ** 2)).toFixed(1);
+      let status = '';
 
-<script>
-function calculateBMI() {
-  const h = parseFloat(document.getElementById('height').value);
-  const w = parseFloat(document.getElementById('weight').value);
-  const resultBox = document.getElementById('BMI_resultBox');
-  const bmiVal = document.getElementById('bmiValue');
-  const bmiStatus = document.getElementById('bmiStatus');
+      if (bmi < 18.5) {
+        status = '過輕';
+      } else if (bmi < 24) {
+        status = '正常';
+      } else if (bmi < 27) {
+        status = '過重';
+      } else if (bmi < 30) {
+        status = '輕度肥胖';
+      } else if (bmi < 35) {
+        status = '中度肥胖';
+      } else {
+        status = '重度肥胖';
+      }
 
-  if (!h || !w || h <= 0 || w <= 0) {
-    resultBox.classList.remove('d-none');
-    bmiVal.textContent = '請輸入正確的身高與體重';
-    bmiStatus.textContent = '';
-    return;
-  }
-
-  const bmi = (w / ((h / 100) ** 2)).toFixed(1);
-  let status = '';
-
-  if (bmi < 18.5) {
-    status = '過輕';
-  } else if (bmi < 24) {
-    status = '正常';
-  } else if (bmi < 27) {
-    status = '過重';
-  } else if (bmi < 30) {
-    status = '輕度肥胖';
-  } else if (bmi < 35) {
-    status = '中度肥胖';
-  } else {
-    status = '重度肥胖';
-  }
-
-  bmiVal.textContent = bmi;
-  bmiStatus.textContent = `體重狀態：${status}`;
-  resultBox.classList.remove('d-none');
-}
-</script>
+      bmiVal.textContent = bmi;
+      bmiStatus.textContent = `體重狀態：${status}`;
+      resultBox.classList.remove('d-none');
+    }
+  </script>
 
 
 

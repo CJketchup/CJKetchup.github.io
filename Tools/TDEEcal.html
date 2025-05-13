@@ -7,7 +7,7 @@
     <meta name="description" content="小工具">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Ketchup" content="Chiao">
-    <title>BMI計算機</title>
+    <title>TDEE (每日總消耗熱量) 計算機</title>
 
     <!-- bootstrap js css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>TDEE (每日總消耗熱量) 計算機</title>
+    
 
 </head>
 
@@ -119,13 +119,13 @@
             <!-- 身高 -->
             <div class="mb-3">
                 <label class="form-label text-light">身高（公分）</label>
-                <input type="number" class="form-control" id="height" placeholder="例如：170">
+                <input type="number" class="form-control" id="height" placeholder="例如：172">
             </div>
 
             <!-- 體重 -->
             <div class="mb-3">
                 <label class="form-label text-light">體重（公斤）</label>
-                <input type="number" class="form-control" id="weight" placeholder="例如：60">
+                <input type="number" class="form-control" id="weight" placeholder="例如：75">
             </div>
 
             <!-- 活動量 -->
@@ -149,6 +149,12 @@
             <div id="tdeeResult" class="alert alert-light d-none">
                 <strong>您的每日總消耗熱量（TDEE）：</strong>
                 <span id="tdeeValue" class="fw-bold"></span> kcal
+                <hr>
+                <p class="mb-1" id="recommand"><strong>建議攝取熱量：</strong></p>
+                <ul class="mb-0">
+                    <li id="recommand1">減脂建議熱量：<span id="cutValue" class="fw-bold"></span> kcal</li>
+                    <li id="recommand2">增肌建議熱量：<span id="bulkValue" class="fw-bold"></span> kcal</li>
+                </ul>
             </div>
 
 
@@ -194,6 +200,10 @@
             }
 
             const tdee = Math.round(bmr * activity);
+            const cutCalories = tdee - 300;
+            const bulkCalories = tdee + 300;
+            document.getElementById('cutValue').textContent = cutCalories;
+            document.getElementById('bulkValue').textContent = bulkCalories;
             tdeeValue.textContent = tdee;
             resultBox.classList.remove('d-none');
             resultBox.classList.remove('alert-danger');
