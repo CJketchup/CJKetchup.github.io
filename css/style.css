@@ -729,10 +729,21 @@ input.gsc-search-button {
 	flex-wrap: nowrap !important;
 	align-items: center;
 }
-
-.gsc-search-box .gsc-input {
-	flex-grow: 1;
+.gsc-input input {
+  flex-grow: 1;
+  min-width: 0;
 }
+.gsc-search-box{
+	flex-grow: 1;
+	  flex-shrink: 0;
+
+}
+.gsc-input-box {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+
 
 #Select_Title h1 {
 	color: antiquewhite;
