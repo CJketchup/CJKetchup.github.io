@@ -728,6 +728,32 @@ footer ul {
 .gsc-search-button {
   flex-shrink: 0 !important;
 }
+@media (max-width: 48rem) {
+  /* 手機下，讓搜尋框置中，並限制最大寬度 */
+  .search-wrapper {
+    width: 100% !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+    padding: 0 0.6250rem;
+  }
+
+  /* 強制 GSC 搜尋框與按鈕同一排 */
+  .gsc-control-searchbox {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .gsc-input-box {
+    flex-grow: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .gsc-search-button {
+    flex-shrink: 0 !important;
+  }
+}
 
 .gsc-search-button {
 	margin-left: -0.4063rem !important;
