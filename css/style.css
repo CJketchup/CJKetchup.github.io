@@ -212,6 +212,7 @@ nav li {
 #second {
 	padding: 5.0rem 0.0rem;
 }
+
 #second p {
 	margin-bottom: 4.375rem;
 	color: antiquewhite;
@@ -220,6 +221,7 @@ nav li {
 	font-weight: 800;
 	font-style: normal;
 }
+
 #second h3,
 #latest h3 {
 	margin-bottom: 1.875rem;
@@ -659,10 +661,14 @@ footer ul {
 		margin-top: 1.875rem;
 		margin-bottom: 1.125rem;
 	}
-	.gsc-search-box .gsc-input {
-    display: flex;
-}
-	
+
+	.gsc-input-box {
+		display: flex !important;
+		align-items: center;
+		gap: 8px;
+		/* 間距 */
+	}
+
 }
 
 #intro .container {
@@ -709,7 +715,7 @@ footer ul {
 	margin-top: 0.0rem !important;
 	height: 2.2812rem;
 	display: inline-block !important;
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 input.gsc-search-button {
@@ -720,18 +726,18 @@ input.gsc-search-button {
 	color: rgb(33, 35, 35) !important;
 	border: none !important;
 	display: flex !important;
-  flex-wrap: nowrap !important;
-  align-items: center;
+	flex-wrap: nowrap !important;
+	align-items: center;
 }
 
 .gsc-search-box .gsc-input {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
-#Select_Title h1{
+#Select_Title h1 {
 	color: antiquewhite;
 	font-weight: 700;
-	font-size:2.75rem;
+	font-size: 2.75rem;
 }
 
 .custom-tool-list .list-group-item {
@@ -750,7 +756,7 @@ input.gsc-search-button {
 #bulkValue,
 #recommand,
 #recommand1,
-#recommand2{
+#recommand2 {
 	font-family: "微軟正黑體", sans-serif;
 	font-size: 1.125rem;
 	font-weight: bold;
@@ -761,17 +767,19 @@ input.gsc-search-button {
 	font-family: "微軟正黑體", sans-serif;
 	font-weight: 600;
 }
+
 #Unit_transfer .form-label {
 	font-family: "微軟正黑體", sans-serif;
 	font-weight: 600;
 }
 
-#TDEE_explain P{
+#TDEE_explain P {
 	font-family: "Microsoft JhengHei", sans-serif;
 	font-size: 0.875rem;
 	margin-top: 2.5rem;
 }
-#Unit_transfer h4{
+
+#Unit_transfer h4 {
 	font-family: "微軟正黑體", sans-serif;
 	font-weight: 600;
 	font-size: 1.8rem;
