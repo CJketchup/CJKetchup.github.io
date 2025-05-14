@@ -659,6 +659,9 @@ footer ul {
 		margin-top: 1.875rem;
 		margin-bottom: 1.125rem;
 	}
+	.gsc-search-box .gsc-input {
+    display: flex;
+}
 	
 }
 
