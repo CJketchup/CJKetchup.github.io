@@ -85,7 +85,11 @@
 
                         <script async src="https://cse.google.com/cse.js?cx=52ac00808adc84311">
                         </script>
-                        <div class="gcse-searchbox-only"></div>
+                        <div class="d-flex align-items-center">
+                            <div style="max-width: 100%; overflow: hidden;">
+                                <div class="gcse-searchbox-only"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -191,17 +195,17 @@
                 if (from === 'kg') {
                     lbInput.value = (value * 2.20462).toFixed(2);
                     ozInput.value = (value * 35.274).toFixed(2);
-                    gInput.value = (value * 1000).toFixed(2); 
+                    gInput.value = (value * 1000).toFixed(2);
                 } else if (from === 'lb') {
                     const kg = value / 2.20462;
                     kgInput.value = kg.toFixed(2);
                     ozInput.value = (value * 16).toFixed(2);
-                    gInput.value = (kg * 1000).toFixed(2); 
+                    gInput.value = (kg * 1000).toFixed(2);
                 } else if (from === 'oz') {
                     const kg = value / 35.274;
                     kgInput.value = kg.toFixed(2);
                     lbInput.value = (value / 16).toFixed(2);
-                    gInput.value = (kg * 1000).toFixed(2); 
+                    gInput.value = (kg * 1000).toFixed(2);
                 } else if (from === 'g') {
                     const kg = value / 1000;
                     kgInput.value = kg.toFixed(2);
@@ -213,7 +217,7 @@
             document.getElementById('kgInput').addEventListener('input', e => updateWeight('kg', e.target.value));
             document.getElementById('lbInput').addEventListener('input', e => updateWeight('lb', e.target.value));
             document.getElementById('ozInput').addEventListener('input', e => updateWeight('oz', e.target.value));
-            document.getElementById('gInput').addEventListener('input', e => updateWeight('g', e.target.value)); 
+            document.getElementById('gInput').addEventListener('input', e => updateWeight('g', e.target.value));
 
             // 長度轉換公式
             function updateLength(from, value) {
